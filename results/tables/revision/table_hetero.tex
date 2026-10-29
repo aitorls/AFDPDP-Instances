@@ -1,0 +1,18 @@
+{\color{red}
+\begin{table}[htb]
+\centering
+\caption{Heterogeneous fleets: grid instances with wide windows and 6 or 9 robots, in which the regular robots cycle through three types (10 instances per row). Mean MCFI cost and mean relative cost difference (\%) of MCFI+R and WS-MILP with respect to MCFI, over all instances. MILP solved: instances completed by the stand-alone MILP with the heterogeneous fleets and with the original fleets.}
+\label{tab:hetero}
+\begin{tabular}{lr|rrr|rr}
+\toprule
+ & & MCFI & MCFI+R & WS-MILP & \multicolumn{2}{c}{MILP solved} \\
+Graph & Robots & Cost & $\Delta$ MCFI & $\Delta$ MCFI & Heterogeneous & Original \\
+\midrule
+SparseGrid & 6 & 10637 & -9.8 & -19.5 & 6/10 & 7/10 \\
+SparseGrid & 9 & 10696 & -13.2 & -18.4 & 3/10 & 1/10 \\
+DenseGrid & 6 & 10454 & -9.5 & -18.7 & 5/10 & 7/10 \\
+DenseGrid & 9 & 10593 & -11.8 & -17.2 & 1/10 & 1/10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+}

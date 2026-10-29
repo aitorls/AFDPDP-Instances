@@ -1,0 +1,3054 @@
+{
+    "instance_name": "6HR_6Q_50RQT_2q_8",
+    "solution_name": "6HR_6Q_50RQT_2q_8_solution",
+    "cost": 23640.0,
+    "route_cost": 13240.0,
+    "delay_cost": 10400.0,
+    "delay": 52.0,
+    "max_time": 3481.0,
+    "distance_travelled": 13180.0,
+    "costs_routes": {
+        "robot_1": 1920.0,
+        "robot_2": 2800.0,
+        "robot_3": 2700.0,
+        "robot_4": 2700.0,
+        "robot_5": 1580.0,
+        "robot_6": 1480.0,
+        "extra_robot_1": 0.0
+    },
+    "delay_cost_routes": {
+        "robot_1": 10400.0,
+        "robot_2": 0.0,
+        "robot_3": 0.0,
+        "robot_4": 0.0,
+        "robot_5": 0.0,
+        "robot_6": 0.0,
+        "extra_robot_1": 0.0
+    },
+    "distances_routes": {
+        "robot_1": 1920.0,
+        "robot_2": 2800.0,
+        "robot_3": 2700.0,
+        "robot_4": 2700.0,
+        "robot_5": 1580.0,
+        "robot_6": 1480.0,
+        "extra_robot_1": 0.0
+    },
+    "complete_routes": {
+        "robot_1": [
+            {
+                "node": "start_robot_1",
+                "node_id": "depot_2",
+                "arrival_time": 0.0,
+                "departure_time": 433.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_21",
+                "node_id": "f3_3_9",
+                "arrival_time": 613.0,
+                "departure_time": 614.0,
+                "current_cost": 180.0,
+                "current_load": 2,
+                "distance_travelled": 180.0,
+                "ongoing_request": [
+                    "request_21"
+                ]
+            },
+            {
+                "node": "pickup_request_7",
+                "node_id": "f9_4_9",
+                "arrival_time": 834.0,
+                "departure_time": 835.0,
+                "current_cost": 400.0,
+                "current_load": 4,
+                "distance_travelled": 400.0,
+                "ongoing_request": [
+                    "request_21",
+                    "request_7"
+                ]
+            },
+            {
+                "node": "pickup_request_43",
+                "node_id": "f8_4_0",
+                "arrival_time": 975.0,
+                "departure_time": 976.0,
+                "current_cost": 540.0,
+                "current_load": 6,
+                "distance_travelled": 540.0,
+                "ongoing_request": [
+                    "request_21",
+                    "request_7",
+                    "request_43"
+                ]
+            },
+            {
+                "node": "delivery_request_21",
+                "node_id": "truck_8",
+                "arrival_time": 1026.0,
+                "departure_time": 1027.0,
+                "current_cost": 590.0,
+                "current_load": 4,
+                "distance_travelled": 590.0,
+                "ongoing_request": [
+                    "request_7",
+                    "request_43"
+                ]
+            },
+            {
+                "node": "pickup_request_27",
+                "node_id": "f3_3_8",
+                "arrival_time": 1087.0,
+                "departure_time": 1088.0,
+                "current_cost": 650.0,
+                "current_load": 6,
+                "distance_travelled": 650.0,
+                "ongoing_request": [
+                    "request_7",
+                    "request_43",
+                    "request_27"
+                ]
+            },
+            {
+                "node": "delivery_request_7",
+                "node_id": "truck_5",
+                "arrival_time": 1298.0,
+                "departure_time": 1299.0,
+                "current_cost": 860.0,
+                "current_load": 4,
+                "distance_travelled": 860.0,
+                "ongoing_request": [
+                    "request_43",
+                    "request_27"
+                ]
+            },
+            {
+                "node": "pickup_request_36",
+                "node_id": "f0_3_2",
+                "arrival_time": 1419.0,
+                "departure_time": 1420.0,
+                "current_cost": 980.0,
+                "current_load": 6,
+                "distance_travelled": 980.0,
+                "ongoing_request": [
+                    "request_43",
+                    "request_27",
+                    "request_36"
+                ]
+            },
+            {
+                "node": "delivery_request_43",
+                "node_id": "truck_1",
+                "arrival_time": 1470.0,
+                "departure_time": 1471.0,
+                "current_cost": 1030.0,
+                "current_load": 4,
+                "distance_travelled": 1030.0,
+                "ongoing_request": [
+                    "request_27",
+                    "request_36"
+                ]
+            },
+            {
+                "node": "pickup_request_18",
+                "node_id": "f2_3_3",
+                "arrival_time": 1591.0,
+                "departure_time": 1592.0,
+                "current_cost": 1150.0,
+                "current_load": 6,
+                "distance_travelled": 1150.0,
+                "ongoing_request": [
+                    "request_27",
+                    "request_36",
+                    "request_18"
+                ]
+            },
+            {
+                "node": "delivery_request_18",
+                "node_id": "truck_4",
+                "arrival_time": 1702.0,
+                "departure_time": 1703.0,
+                "current_cost": 1260.0,
+                "current_load": 4,
+                "distance_travelled": 1260.0,
+                "ongoing_request": [
+                    "request_27",
+                    "request_36"
+                ]
+            },
+            {
+                "node": "delivery_request_36",
+                "node_id": "truck_4",
+                "arrival_time": 1703.0,
+                "departure_time": 1704.0,
+                "current_cost": 1260.0,
+                "current_load": 2,
+                "distance_travelled": 1260.0,
+                "ongoing_request": [
+                    "request_27"
+                ]
+            },
+            {
+                "node": "delivery_request_27",
+                "node_id": "truck_2",
+                "arrival_time": 1824.0,
+                "departure_time": 2939.0,
+                "current_cost": 1380.0,
+                "current_load": 0.0,
+                "distance_travelled": 1380.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_50",
+                "node_id": "f6_4_5",
+                "arrival_time": 3109.0,
+                "departure_time": 3110.0,
+                "current_cost": 1550.0,
+                "current_load": 2.0,
+                "distance_travelled": 1550.0,
+                "ongoing_request": [
+                    "request_50"
+                ]
+            },
+            {
+                "node": "delivery_request_50",
+                "node_id": "truck_0",
+                "arrival_time": 3360.0,
+                "departure_time": 4240.0,
+                "current_cost": 1800.0,
+                "current_load": 0.0,
+                "distance_travelled": 1800.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_robot_1",
+                "node_id": "depot_2",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 1920.0,
+                "current_load": 0,
+                "distance_travelled": 1920.0,
+                "ongoing_request": []
+            }
+        ],
+        "robot_2": [
+            {
+                "node": "start_robot_2",
+                "node_id": "depot_9",
+                "arrival_time": 0.0,
+                "departure_time": 81.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_2",
+                "node_id": "f9_3_1",
+                "arrival_time": 131.0,
+                "departure_time": 132.0,
+                "current_cost": 50.0,
+                "current_load": 2,
+                "distance_travelled": 50.0,
+                "ongoing_request": [
+                    "request_2"
+                ]
+            },
+            {
+                "node": "delivery_request_2",
+                "node_id": "truck_9",
+                "arrival_time": 182.0,
+                "departure_time": 321.0,
+                "current_cost": 100.0,
+                "current_load": 0,
+                "distance_travelled": 100.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_14",
+                "node_id": "f8_1_5",
+                "arrival_time": 421.0,
+                "departure_time": 422.0,
+                "current_cost": 200.0,
+                "current_load": 2,
+                "distance_travelled": 200.0,
+                "ongoing_request": [
+                    "request_14"
+                ]
+            },
+            {
+                "node": "pickup_request_10",
+                "node_id": "f4_2_9",
+                "arrival_time": 542.0,
+                "departure_time": 543.0,
+                "current_cost": 320.0,
+                "current_load": 4,
+                "distance_travelled": 320.0,
+                "ongoing_request": [
+                    "request_14",
+                    "request_10"
+                ]
+            },
+            {
+                "node": "delivery_request_14",
+                "node_id": "truck_2",
+                "arrival_time": 763.0,
+                "departure_time": 764.0,
+                "current_cost": 540.0,
+                "current_load": 2,
+                "distance_travelled": 540.0,
+                "ongoing_request": [
+                    "request_10"
+                ]
+            },
+            {
+                "node": "delivery_request_10",
+                "node_id": "truck_9",
+                "arrival_time": 984.0,
+                "departure_time": 985.0,
+                "current_cost": 760.0,
+                "current_load": 0,
+                "distance_travelled": 760.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_20",
+                "node_id": "f9_0_1",
+                "arrival_time": 1005.0,
+                "departure_time": 1006.0,
+                "current_cost": 780.0,
+                "current_load": 2,
+                "distance_travelled": 780.0,
+                "ongoing_request": [
+                    "request_20"
+                ]
+            },
+            {
+                "node": "delivery_request_20",
+                "node_id": "truck_8",
+                "arrival_time": 1076.0,
+                "departure_time": 1235.0,
+                "current_cost": 850.0,
+                "current_load": 0,
+                "distance_travelled": 850.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_46",
+                "node_id": "f8_3_9",
+                "arrival_time": 1365.0,
+                "departure_time": 1366.0,
+                "current_cost": 980.0,
+                "current_load": 2,
+                "distance_travelled": 980.0,
+                "ongoing_request": [
+                    "request_46"
+                ]
+            },
+            {
+                "node": "pickup_request_24",
+                "node_id": "f9_4_5",
+                "arrival_time": 1566.0,
+                "departure_time": 1567.0,
+                "current_cost": 1180.0,
+                "current_load": 4,
+                "distance_travelled": 1180.0,
+                "ongoing_request": [
+                    "request_46",
+                    "request_24"
+                ]
+            },
+            {
+                "node": "delivery_request_24",
+                "node_id": "truck_1",
+                "arrival_time": 1917.0,
+                "departure_time": 1918.0,
+                "current_cost": 1530.0,
+                "current_load": 2,
+                "distance_travelled": 1530.0,
+                "ongoing_request": [
+                    "request_46"
+                ]
+            },
+            {
+                "node": "delivery_request_46",
+                "node_id": "truck_8",
+                "arrival_time": 2138.0,
+                "departure_time": 2246.0,
+                "current_cost": 1750.0,
+                "current_load": 0.0,
+                "distance_travelled": 1750.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_32",
+                "node_id": "f6_2_4",
+                "arrival_time": 2376.0,
+                "departure_time": 2377.0,
+                "current_cost": 1880.0,
+                "current_load": 2.0,
+                "distance_travelled": 1880.0,
+                "ongoing_request": [
+                    "request_32"
+                ]
+            },
+            {
+                "node": "delivery_request_32",
+                "node_id": "truck_3",
+                "arrival_time": 2607.0,
+                "departure_time": 2863.0,
+                "current_cost": 2110.0,
+                "current_load": 0.0,
+                "distance_travelled": 2110.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_44",
+                "node_id": "f2_4_2",
+                "arrival_time": 2903.0,
+                "departure_time": 2904.0,
+                "current_cost": 2150.0,
+                "current_load": 2.0,
+                "distance_travelled": 2150.0,
+                "ongoing_request": [
+                    "request_44"
+                ]
+            },
+            {
+                "node": "pickup_request_48",
+                "node_id": "f7_3_2",
+                "arrival_time": 3074.0,
+                "departure_time": 3075.0,
+                "current_cost": 2320.0,
+                "current_load": 4.0,
+                "distance_travelled": 2320.0,
+                "ongoing_request": [
+                    "request_44",
+                    "request_48"
+                ]
+            },
+            {
+                "node": "delivery_request_48",
+                "node_id": "truck_7",
+                "arrival_time": 3135.0,
+                "departure_time": 3136.0,
+                "current_cost": 2380.0,
+                "current_load": 2.0,
+                "distance_travelled": 2380.0,
+                "ongoing_request": [
+                    "request_44"
+                ]
+            },
+            {
+                "node": "pickup_request_47",
+                "node_id": "f1_1_7",
+                "arrival_time": 3236.0,
+                "departure_time": 3237.0,
+                "current_cost": 2480.0,
+                "current_load": 4.0,
+                "distance_travelled": 2480.0,
+                "ongoing_request": [
+                    "request_44",
+                    "request_47"
+                ]
+            },
+            {
+                "node": "delivery_request_47",
+                "node_id": "truck_5",
+                "arrival_time": 3337.0,
+                "departure_time": 3338.0,
+                "current_cost": 2580.0,
+                "current_load": 2.0,
+                "distance_travelled": 2580.0,
+                "ongoing_request": [
+                    "request_44"
+                ]
+            },
+            {
+                "node": "delivery_request_44",
+                "node_id": "truck_5",
+                "arrival_time": 3338.0,
+                "departure_time": 4140.0,
+                "current_cost": 2580.0,
+                "current_load": 0.0,
+                "distance_travelled": 2580.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_robot_2",
+                "node_id": "depot_9",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 2800.0,
+                "current_load": 0,
+                "distance_travelled": 2800.0,
+                "ongoing_request": []
+            }
+        ],
+        "robot_3": [
+            {
+                "node": "start_robot_3",
+                "node_id": "depot_1",
+                "arrival_time": 0.0,
+                "departure_time": 1.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_5",
+                "node_id": "f0_4_2",
+                "arrival_time": 41.0,
+                "departure_time": 42.0,
+                "current_cost": 40.0,
+                "current_load": 2,
+                "distance_travelled": 40.0,
+                "ongoing_request": [
+                    "request_5"
+                ]
+            },
+            {
+                "node": "pickup_request_15",
+                "node_id": "f0_4_4",
+                "arrival_time": 62.0,
+                "departure_time": 63.0,
+                "current_cost": 60.0,
+                "current_load": 4,
+                "distance_travelled": 60.0,
+                "ongoing_request": [
+                    "request_5",
+                    "request_15"
+                ]
+            },
+            {
+                "node": "delivery_request_15",
+                "node_id": "truck_0",
+                "arrival_time": 153.0,
+                "departure_time": 154.0,
+                "current_cost": 150.0,
+                "current_load": 2,
+                "distance_travelled": 150.0,
+                "ongoing_request": [
+                    "request_5"
+                ]
+            },
+            {
+                "node": "delivery_request_5",
+                "node_id": "truck_1",
+                "arrival_time": 224.0,
+                "departure_time": 293.0,
+                "current_cost": 220.0,
+                "current_load": 0,
+                "distance_travelled": 220.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_3",
+                "node_id": "f1_1_3",
+                "arrival_time": 343.0,
+                "departure_time": 344.0,
+                "current_cost": 270.0,
+                "current_load": 2,
+                "distance_travelled": 270.0,
+                "ongoing_request": [
+                    "request_3"
+                ]
+            },
+            {
+                "node": "pickup_request_17",
+                "node_id": "f0_0_9",
+                "arrival_time": 484.0,
+                "departure_time": 485.0,
+                "current_cost": 410.0,
+                "current_load": 4,
+                "distance_travelled": 410.0,
+                "ongoing_request": [
+                    "request_3",
+                    "request_17"
+                ]
+            },
+            {
+                "node": "delivery_request_3",
+                "node_id": "truck_8",
+                "arrival_time": 655.0,
+                "departure_time": 656.0,
+                "current_cost": 580.0,
+                "current_load": 2,
+                "distance_travelled": 580.0,
+                "ongoing_request": [
+                    "request_17"
+                ]
+            },
+            {
+                "node": "delivery_request_17",
+                "node_id": "truck_2",
+                "arrival_time": 826.0,
+                "departure_time": 839.0,
+                "current_cost": 750.0,
+                "current_load": 0.0,
+                "distance_travelled": 750.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_8",
+                "node_id": "f2_0_4",
+                "arrival_time": 889.0,
+                "departure_time": 890.0,
+                "current_cost": 800.0,
+                "current_load": 2.0,
+                "distance_travelled": 800.0,
+                "ongoing_request": [
+                    "request_8"
+                ]
+            },
+            {
+                "node": "delivery_request_8",
+                "node_id": "truck_5",
+                "arrival_time": 1060.0,
+                "departure_time": 1061.0,
+                "current_cost": 970.0,
+                "current_load": 0.0,
+                "distance_travelled": 970.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_13",
+                "node_id": "f1_4_6",
+                "arrival_time": 1201.0,
+                "departure_time": 1202.0,
+                "current_cost": 1110.0,
+                "current_load": 2.0,
+                "distance_travelled": 1110.0,
+                "ongoing_request": [
+                    "request_13"
+                ]
+            },
+            {
+                "node": "delivery_request_13",
+                "node_id": "truck_2",
+                "arrival_time": 1282.0,
+                "departure_time": 1283.0,
+                "current_cost": 1190.0,
+                "current_load": 0.0,
+                "distance_travelled": 1190.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_16",
+                "node_id": "f2_1_7",
+                "arrival_time": 1373.0,
+                "departure_time": 1374.0,
+                "current_cost": 1280.0,
+                "current_load": 2.0,
+                "distance_travelled": 1280.0,
+                "ongoing_request": [
+                    "request_16"
+                ]
+            },
+            {
+                "node": "pickup_request_29",
+                "node_id": "f3_1_9",
+                "arrival_time": 1484.0,
+                "departure_time": 1485.0,
+                "current_cost": 1390.0,
+                "current_load": 4.0,
+                "distance_travelled": 1390.0,
+                "ongoing_request": [
+                    "request_16",
+                    "request_29"
+                ]
+            },
+            {
+                "node": "delivery_request_29",
+                "node_id": "truck_3",
+                "arrival_time": 1595.0,
+                "departure_time": 1596.0,
+                "current_cost": 1500.0,
+                "current_load": 2.0,
+                "distance_travelled": 1500.0,
+                "ongoing_request": [
+                    "request_16"
+                ]
+            },
+            {
+                "node": "delivery_request_16",
+                "node_id": "truck_3",
+                "arrival_time": 1596.0,
+                "departure_time": 1725.0,
+                "current_cost": 1500.0,
+                "current_load": 0.0,
+                "distance_travelled": 1500.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_22",
+                "node_id": "f1_0_6",
+                "arrival_time": 1895.0,
+                "departure_time": 1896.0,
+                "current_cost": 1670.0,
+                "current_load": 2.0,
+                "distance_travelled": 1670.0,
+                "ongoing_request": [
+                    "request_22"
+                ]
+            },
+            {
+                "node": "pickup_request_41",
+                "node_id": "f5_3_9",
+                "arrival_time": 2046.0,
+                "departure_time": 2047.0,
+                "current_cost": 1820.0,
+                "current_load": 4.0,
+                "distance_travelled": 1820.0,
+                "ongoing_request": [
+                    "request_22",
+                    "request_41"
+                ]
+            },
+            {
+                "node": "pickup_request_23",
+                "node_id": "f2_2_9",
+                "arrival_time": 2237.0,
+                "departure_time": 2238.0,
+                "current_cost": 2010.0,
+                "current_load": 6.0,
+                "distance_travelled": 2010.0,
+                "ongoing_request": [
+                    "request_22",
+                    "request_41",
+                    "request_23"
+                ]
+            },
+            {
+                "node": "delivery_request_23",
+                "node_id": "truck_3",
+                "arrival_time": 2368.0,
+                "departure_time": 2369.0,
+                "current_cost": 2140.0,
+                "current_load": 4.0,
+                "distance_travelled": 2140.0,
+                "ongoing_request": [
+                    "request_22",
+                    "request_41"
+                ]
+            },
+            {
+                "node": "delivery_request_22",
+                "node_id": "truck_1",
+                "arrival_time": 2489.0,
+                "departure_time": 2490.0,
+                "current_cost": 2260.0,
+                "current_load": 2.0,
+                "distance_travelled": 2260.0,
+                "ongoing_request": [
+                    "request_41"
+                ]
+            },
+            {
+                "node": "pickup_request_39",
+                "node_id": "f1_4_6",
+                "arrival_time": 2600.0,
+                "departure_time": 2601.0,
+                "current_cost": 2370.0,
+                "current_load": 4.0,
+                "distance_travelled": 2370.0,
+                "ongoing_request": [
+                    "request_41",
+                    "request_39"
+                ]
+            },
+            {
+                "node": "delivery_request_39",
+                "node_id": "truck_5",
+                "arrival_time": 2741.0,
+                "departure_time": 2742.0,
+                "current_cost": 2510.0,
+                "current_load": 2.0,
+                "distance_travelled": 2510.0,
+                "ongoing_request": [
+                    "request_41"
+                ]
+            },
+            {
+                "node": "delivery_request_41",
+                "node_id": "truck_0",
+                "arrival_time": 2862.0,
+                "departure_time": 4290.0,
+                "current_cost": 2630.0,
+                "current_load": 0.0,
+                "distance_travelled": 2630.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_robot_3",
+                "node_id": "depot_1",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 2700.0,
+                "current_load": 0,
+                "distance_travelled": 2700.0,
+                "ongoing_request": []
+            }
+        ],
+        "robot_4": [
+            {
+                "node": "start_robot_4",
+                "node_id": "depot_7",
+                "arrival_time": 0.0,
+                "departure_time": 0.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_1",
+                "node_id": "f2_1_3",
+                "arrival_time": 90.0,
+                "departure_time": 91.0,
+                "current_cost": 90.0,
+                "current_load": 2,
+                "distance_travelled": 90.0,
+                "ongoing_request": [
+                    "request_1"
+                ]
+            },
+            {
+                "node": "pickup_request_4",
+                "node_id": "f7_0_2",
+                "arrival_time": 191.0,
+                "departure_time": 192.0,
+                "current_cost": 190.0,
+                "current_load": 4,
+                "distance_travelled": 190.0,
+                "ongoing_request": [
+                    "request_1",
+                    "request_4"
+                ]
+            },
+            {
+                "node": "pickup_request_9",
+                "node_id": "f6_2_0",
+                "arrival_time": 242.0,
+                "departure_time": 243.0,
+                "current_cost": 240.0,
+                "current_load": 6,
+                "distance_travelled": 240.0,
+                "ongoing_request": [
+                    "request_1",
+                    "request_4",
+                    "request_9"
+                ]
+            },
+            {
+                "node": "delivery_request_9",
+                "node_id": "truck_0",
+                "arrival_time": 423.0,
+                "departure_time": 424.0,
+                "current_cost": 420.0,
+                "current_load": 4,
+                "distance_travelled": 420.0,
+                "ongoing_request": [
+                    "request_1",
+                    "request_4"
+                ]
+            },
+            {
+                "node": "delivery_request_4",
+                "node_id": "truck_5",
+                "arrival_time": 544.0,
+                "departure_time": 545.0,
+                "current_cost": 540.0,
+                "current_load": 2,
+                "distance_travelled": 540.0,
+                "ongoing_request": [
+                    "request_1"
+                ]
+            },
+            {
+                "node": "delivery_request_1",
+                "node_id": "truck_7",
+                "arrival_time": 665.0,
+                "departure_time": 666.0,
+                "current_cost": 660.0,
+                "current_load": 0,
+                "distance_travelled": 660.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_11",
+                "node_id": "f4_2_6",
+                "arrival_time": 836.0,
+                "departure_time": 837.0,
+                "current_cost": 830.0,
+                "current_load": 2,
+                "distance_travelled": 830.0,
+                "ongoing_request": [
+                    "request_11"
+                ]
+            },
+            {
+                "node": "delivery_request_11",
+                "node_id": "truck_5",
+                "arrival_time": 1107.0,
+                "departure_time": 1129.0,
+                "current_cost": 1100.0,
+                "current_load": 0,
+                "distance_travelled": 1100.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_28",
+                "node_id": "f6_3_0",
+                "arrival_time": 1219.0,
+                "departure_time": 1220.0,
+                "current_cost": 1190.0,
+                "current_load": 2,
+                "distance_travelled": 1190.0,
+                "ongoing_request": [
+                    "request_28"
+                ]
+            },
+            {
+                "node": "delivery_request_28",
+                "node_id": "truck_7",
+                "arrival_time": 1250.0,
+                "departure_time": 1751.0,
+                "current_cost": 1220.0,
+                "current_load": 0,
+                "distance_travelled": 1220.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_31",
+                "node_id": "f4_4_8",
+                "arrival_time": 1921.0,
+                "departure_time": 1922.0,
+                "current_cost": 1390.0,
+                "current_load": 2,
+                "distance_travelled": 1390.0,
+                "ongoing_request": [
+                    "request_31"
+                ]
+            },
+            {
+                "node": "pickup_request_33",
+                "node_id": "f9_0_0",
+                "arrival_time": 1982.0,
+                "departure_time": 1983.0,
+                "current_cost": 1450.0,
+                "current_load": 4,
+                "distance_travelled": 1450.0,
+                "ongoing_request": [
+                    "request_31",
+                    "request_33"
+                ]
+            },
+            {
+                "node": "delivery_request_33",
+                "node_id": "truck_1",
+                "arrival_time": 2243.0,
+                "departure_time": 2244.0,
+                "current_cost": 1710.0,
+                "current_load": 2,
+                "distance_travelled": 1710.0,
+                "ongoing_request": [
+                    "request_31"
+                ]
+            },
+            {
+                "node": "pickup_request_35",
+                "node_id": "f1_2_1",
+                "arrival_time": 2284.0,
+                "departure_time": 2285.0,
+                "current_cost": 1750.0,
+                "current_load": 4,
+                "distance_travelled": 1750.0,
+                "ongoing_request": [
+                    "request_31",
+                    "request_35"
+                ]
+            },
+            {
+                "node": "pickup_request_49",
+                "node_id": "f0_4_8",
+                "arrival_time": 2405.0,
+                "departure_time": 2406.0,
+                "current_cost": 1870.0,
+                "current_load": 6.0,
+                "distance_travelled": 1870.0,
+                "ongoing_request": [
+                    "request_31",
+                    "request_35",
+                    "request_49"
+                ]
+            },
+            {
+                "node": "delivery_request_35",
+                "node_id": "truck_2",
+                "arrival_time": 2556.0,
+                "departure_time": 2557.0,
+                "current_cost": 2020.0,
+                "current_load": 4.0,
+                "distance_travelled": 2020.0,
+                "ongoing_request": [
+                    "request_31",
+                    "request_49"
+                ]
+            },
+            {
+                "node": "delivery_request_31",
+                "node_id": "truck_7",
+                "arrival_time": 2677.0,
+                "departure_time": 2678.0,
+                "current_cost": 2140.0,
+                "current_load": 2.0,
+                "distance_travelled": 2140.0,
+                "ongoing_request": [
+                    "request_49"
+                ]
+            },
+            {
+                "node": "delivery_request_49",
+                "node_id": "truck_9",
+                "arrival_time": 2798.0,
+                "departure_time": 2799.0,
+                "current_cost": 2260.0,
+                "current_load": 0.0,
+                "distance_travelled": 2260.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_40",
+                "node_id": "f9_2_3",
+                "arrival_time": 2859.0,
+                "departure_time": 2860.0,
+                "current_cost": 2320.0,
+                "current_load": 2.0,
+                "distance_travelled": 2320.0,
+                "ongoing_request": [
+                    "request_40"
+                ]
+            },
+            {
+                "node": "delivery_request_40",
+                "node_id": "truck_2",
+                "arrival_time": 3120.0,
+                "departure_time": 4240.0,
+                "current_cost": 2580.0,
+                "current_load": 0.0,
+                "distance_travelled": 2580.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_robot_4",
+                "node_id": "depot_7",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 2700.0,
+                "current_load": 0,
+                "distance_travelled": 2700.0,
+                "ongoing_request": []
+            }
+        ],
+        "robot_5": [
+            {
+                "node": "start_robot_5",
+                "node_id": "depot_0",
+                "arrival_time": 0.0,
+                "departure_time": 547.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_25",
+                "node_id": "f0_3_1",
+                "arrival_time": 597.0,
+                "departure_time": 598.0,
+                "current_cost": 50.0,
+                "current_load": 2,
+                "distance_travelled": 50.0,
+                "ongoing_request": [
+                    "request_25"
+                ]
+            },
+            {
+                "node": "pickup_request_6",
+                "node_id": "f2_2_3",
+                "arrival_time": 728.0,
+                "departure_time": 729.0,
+                "current_cost": 180.0,
+                "current_load": 4,
+                "distance_travelled": 180.0,
+                "ongoing_request": [
+                    "request_25",
+                    "request_6"
+                ]
+            },
+            {
+                "node": "pickup_request_26",
+                "node_id": "f6_1_0",
+                "arrival_time": 859.0,
+                "departure_time": 860.0,
+                "current_cost": 310.0,
+                "current_load": 6,
+                "distance_travelled": 310.0,
+                "ongoing_request": [
+                    "request_25",
+                    "request_6",
+                    "request_26"
+                ]
+            },
+            {
+                "node": "delivery_request_25",
+                "node_id": "truck_6",
+                "arrival_time": 880.0,
+                "departure_time": 881.0,
+                "current_cost": 330.0,
+                "current_load": 4.0,
+                "distance_travelled": 330.0,
+                "ongoing_request": [
+                    "request_6",
+                    "request_26"
+                ]
+            },
+            {
+                "node": "pickup_request_34",
+                "node_id": "f5_4_0",
+                "arrival_time": 901.0,
+                "departure_time": 902.0,
+                "current_cost": 350.0,
+                "current_load": 6.0,
+                "distance_travelled": 350.0,
+                "ongoing_request": [
+                    "request_6",
+                    "request_26",
+                    "request_34"
+                ]
+            },
+            {
+                "node": "delivery_request_26",
+                "node_id": "truck_9",
+                "arrival_time": 1072.0,
+                "departure_time": 1073.0,
+                "current_cost": 520.0,
+                "current_load": 4.0,
+                "distance_travelled": 520.0,
+                "ongoing_request": [
+                    "request_6",
+                    "request_34"
+                ]
+            },
+            {
+                "node": "delivery_request_34",
+                "node_id": "truck_4",
+                "arrival_time": 1193.0,
+                "departure_time": 1194.0,
+                "current_cost": 640.0,
+                "current_load": 2.0,
+                "distance_travelled": 640.0,
+                "ongoing_request": [
+                    "request_6"
+                ]
+            },
+            {
+                "node": "pickup_request_12",
+                "node_id": "f4_4_7",
+                "arrival_time": 1314.0,
+                "departure_time": 1315.0,
+                "current_cost": 760.0,
+                "current_load": 4.0,
+                "distance_travelled": 760.0,
+                "ongoing_request": [
+                    "request_6",
+                    "request_12"
+                ]
+            },
+            {
+                "node": "delivery_request_12",
+                "node_id": "truck_7",
+                "arrival_time": 1495.0,
+                "departure_time": 1496.0,
+                "current_cost": 940.0,
+                "current_load": 2.0,
+                "distance_travelled": 940.0,
+                "ongoing_request": [
+                    "request_6"
+                ]
+            },
+            {
+                "node": "delivery_request_6",
+                "node_id": "truck_1",
+                "arrival_time": 1666.0,
+                "departure_time": 1793.0,
+                "current_cost": 1110.0,
+                "current_load": 0.0,
+                "distance_travelled": 1110.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_30",
+                "node_id": "f6_4_5",
+                "arrival_time": 1993.0,
+                "departure_time": 1994.0,
+                "current_cost": 1310.0,
+                "current_load": 2.0,
+                "distance_travelled": 1310.0,
+                "ongoing_request": [
+                    "request_30"
+                ]
+            },
+            {
+                "node": "delivery_request_30",
+                "node_id": "truck_0",
+                "arrival_time": 2244.0,
+                "departure_time": 4340.0,
+                "current_cost": 1560.0,
+                "current_load": 0.0,
+                "distance_travelled": 1560.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_robot_5",
+                "node_id": "depot_0",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 1580.0,
+                "current_load": 0,
+                "distance_travelled": 1580.0,
+                "ongoing_request": []
+            }
+        ],
+        "robot_6": [
+            {
+                "node": "start_robot_6",
+                "node_id": "depot_2",
+                "arrival_time": 0.0,
+                "departure_time": 1399.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_19",
+                "node_id": "f4_0_3",
+                "arrival_time": 1539.0,
+                "departure_time": 1540.0,
+                "current_cost": 140.0,
+                "current_load": 2,
+                "distance_travelled": 140.0,
+                "ongoing_request": [
+                    "request_19"
+                ]
+            },
+            {
+                "node": "delivery_request_19",
+                "node_id": "truck_3",
+                "arrival_time": 1630.0,
+                "departure_time": 2053.0,
+                "current_cost": 230.0,
+                "current_load": 0,
+                "distance_travelled": 230.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_38",
+                "node_id": "f4_4_4",
+                "arrival_time": 2193.0,
+                "departure_time": 2194.0,
+                "current_cost": 370.0,
+                "current_load": 2,
+                "distance_travelled": 370.0,
+                "ongoing_request": [
+                    "request_38"
+                ]
+            },
+            {
+                "node": "delivery_request_38",
+                "node_id": "truck_4",
+                "arrival_time": 2284.0,
+                "departure_time": 2351.0,
+                "current_cost": 460.0,
+                "current_load": 0,
+                "distance_travelled": 460.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_37",
+                "node_id": "f9_2_3",
+                "arrival_time": 2511.0,
+                "departure_time": 2512.0,
+                "current_cost": 620.0,
+                "current_load": 2,
+                "distance_travelled": 620.0,
+                "ongoing_request": [
+                    "request_37"
+                ]
+            },
+            {
+                "node": "pickup_request_45",
+                "node_id": "f3_2_8",
+                "arrival_time": 2652.0,
+                "departure_time": 2653.0,
+                "current_cost": 760.0,
+                "current_load": 4,
+                "distance_travelled": 760.0,
+                "ongoing_request": [
+                    "request_37",
+                    "request_45"
+                ]
+            },
+            {
+                "node": "pickup_request_42",
+                "node_id": "f7_1_4",
+                "arrival_time": 2773.0,
+                "departure_time": 2774.0,
+                "current_cost": 880.0,
+                "current_load": 6,
+                "distance_travelled": 880.0,
+                "ongoing_request": [
+                    "request_37",
+                    "request_45",
+                    "request_42"
+                ]
+            },
+            {
+                "node": "delivery_request_37",
+                "node_id": "truck_4",
+                "arrival_time": 3014.0,
+                "departure_time": 3015.0,
+                "current_cost": 1120.0,
+                "current_load": 4,
+                "distance_travelled": 1120.0,
+                "ongoing_request": [
+                    "request_45",
+                    "request_42"
+                ]
+            },
+            {
+                "node": "delivery_request_45",
+                "node_id": "truck_3",
+                "arrival_time": 3085.0,
+                "departure_time": 3086.0,
+                "current_cost": 1190.0,
+                "current_load": 2,
+                "distance_travelled": 1190.0,
+                "ongoing_request": [
+                    "request_42"
+                ]
+            },
+            {
+                "node": "delivery_request_42",
+                "node_id": "truck_0",
+                "arrival_time": 3256.0,
+                "departure_time": 4240.0,
+                "current_cost": 1360.0,
+                "current_load": 0,
+                "distance_travelled": 1360.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_robot_6",
+                "node_id": "depot_2",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 1480.0,
+                "current_load": 0,
+                "distance_travelled": 1480.0,
+                "ongoing_request": []
+            }
+        ],
+        "extra_robot_1": [
+            {
+                "node": "start_extra_robot_1",
+                "node_id": "depot_0",
+                "arrival_time": 0.0,
+                "departure_time": 4360.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "end_extra_robot_1",
+                "node_id": "depot_0",
+                "arrival_time": 4360.0,
+                "departure_time": 4360.0,
+                "current_cost": 0.0,
+                "current_load": 0,
+                "distance_travelled": 0.0,
+                "ongoing_request": []
+            }
+        ]
+    },
+    "iteration_cost": [
+        210,
+        320,
+        460,
+        720,
+        850,
+        1070,
+        1510,
+        1650,
+        2170,
+        2310,
+        2720,
+        3090,
+        3250,
+        3830,
+        4370,
+        4670,
+        4690,
+        5010,
+        5490,
+        5210,
+        5330,
+        5450,
+        5750,
+        5770,
+        6030,
+        6250,
+        6510,
+        6610,
+        7250,
+        7560,
+        7620,
+        7760,
+        8100,
+        8500,
+        8880,
+        9200,
+        9460,
+        9740,
+        9780,
+        10200,
+        10820,
+        11000,
+        11300,
+        11420,
+        11880,
+        12200,
+        12520,
+        12640,
+        13160,
+        13240
+    ],
+    "iteration_cost_2": [
+        0,
+        90,
+        130,
+        130,
+        250,
+        400,
+        760,
+        810,
+        810,
+        920,
+        1300,
+        1990,
+        2040,
+        2040,
+        2560,
+        2730,
+        3090,
+        3090,
+        3510,
+        3560,
+        3940,
+        4140,
+        4610,
+        4610,
+        4930,
+        5060,
+        5060,
+        5450,
+        5450,
+        5760,
+        5950,
+        7020,
+        7190,
+        7360,
+        7560,
+        7560,
+        8500,
+        8690,
+        8840,
+        9100,
+        9100,
+        9350,
+        9860,
+        10010,
+        10260,
+        10880,
+        11440,
+        11480,
+        11650,
+        11890,
+        13240
+    ],
+    "warm_start_iteration_stats": [
+        {
+            "current_time": 0,
+            "active_customers": [
+                "request_1"
+            ],
+            "cost_H": 210.0,
+            "cost_MILP": 210.0,
+            "diff": 0.0,
+            "MILP_time": 0.0052,
+            "total_time": 0.05071,
+            "MILP_gap": 0.0,
+            "total_cost": 210,
+            "time_before_MILP": 0.03115,
+            "time_after_MILP": 0.01436,
+            "active_tasks": 1,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 210.0,
+            "MILP_bound": 210.0,
+            "MILP_runtime": 0.004719972610473633,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 0.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 1,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1,
+            "active_customers": [
+                "request_5"
+            ],
+            "cost_H": 230.0,
+            "cost_MILP": 230.0,
+            "diff": 0.0,
+            "MILP_time": 0.0028,
+            "total_time": 0.05142,
+            "MILP_gap": 0.0,
+            "total_cost": 320,
+            "time_before_MILP": 0.03134,
+            "time_after_MILP": 0.01728,
+            "active_tasks": 2,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 220.0,
+            "MILP_bound": 220.0,
+            "MILP_runtime": 0.0024080276489257812,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 0.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 2,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 13,
+            "active_customers": [
+                "request_15"
+            ],
+            "cost_H": 330.0,
+            "cost_MILP": 330.0,
+            "diff": 0.0,
+            "MILP_time": 0.00364,
+            "total_time": 0.05999,
+            "MILP_gap": 0.0,
+            "total_cost": 460,
+            "time_before_MILP": 0.03491,
+            "time_after_MILP": 0.02144,
+            "active_tasks": 3,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 310.0,
+            "MILP_bound": 310.0,
+            "MILP_runtime": 0.003222942352294922,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 0.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 2,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 41,
+            "active_customers": [
+                "request_4"
+            ],
+            "cost_H": 590.0,
+            "cost_MILP": 590.0,
+            "diff": 0.0,
+            "MILP_time": 0.03504,
+            "total_time": 0.11746,
+            "MILP_gap": 0.0,
+            "total_cost": 720,
+            "time_before_MILP": 0.05312,
+            "time_after_MILP": 0.0293,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 570.0,
+            "MILP_bound": 570.0,
+            "MILP_runtime": 0.03465414047241211,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 2,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 81,
+            "active_customers": [
+                "request_2"
+            ],
+            "cost_H": 610.0,
+            "cost_MILP": 610.0,
+            "diff": 0.0,
+            "MILP_time": 0.02589,
+            "total_time": 0.10819,
+            "MILP_gap": 0.0,
+            "total_cost": 850,
+            "time_before_MILP": 0.05109,
+            "time_after_MILP": 0.03121,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 590.0,
+            "MILP_bound": 590.0,
+            "MILP_runtime": 0.025495052337646484,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 3,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 101,
+            "active_customers": [
+                "request_9"
+            ],
+            "cost_H": 680.0,
+            "cost_MILP": 680.0,
+            "diff": 0.0,
+            "MILP_time": 0.01493,
+            "total_time": 0.09215,
+            "MILP_gap": 0.0,
+            "total_cost": 1070,
+            "time_before_MILP": 0.04426,
+            "time_after_MILP": 0.03295,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 650.0,
+            "MILP_bound": 650.0,
+            "MILP_runtime": 0.014518976211547852,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 3,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 293,
+            "active_customers": [
+                "request_3"
+            ],
+            "cost_H": 770.0,
+            "cost_MILP": 770.0,
+            "diff": 0.0,
+            "MILP_time": 0.0083,
+            "total_time": 0.08274,
+            "MILP_gap": 0.0,
+            "total_cost": 1510,
+            "time_before_MILP": 0.03801,
+            "time_after_MILP": 0.03642,
+            "active_tasks": 3,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 740.0,
+            "MILP_bound": 740.0,
+            "MILP_runtime": 0.00787496566772461,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 3,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 315,
+            "active_customers": [
+                "request_17"
+            ],
+            "cost_H": 860.0,
+            "cost_MILP": 860.0,
+            "diff": 0.0,
+            "MILP_time": 0.01252,
+            "total_time": 0.09914,
+            "MILP_gap": 0.0,
+            "total_cost": 1650,
+            "time_before_MILP": 0.04365,
+            "time_after_MILP": 0.04297,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 830.0,
+            "MILP_bound": 830.0,
+            "MILP_runtime": 0.012070894241333008,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 3,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 321,
+            "active_customers": [
+                "request_14"
+            ],
+            "cost_H": 1380.0,
+            "cost_MILP": 1380.0,
+            "diff": 0.0,
+            "MILP_time": 0.05583,
+            "total_time": 0.16923,
+            "MILP_gap": 0.0,
+            "total_cost": 2170,
+            "time_before_MILP": 0.06188,
+            "time_after_MILP": 0.05152,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1350.0,
+            "MILP_bound": 1350.0,
+            "MILP_runtime": 0.055516958236694336,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 3,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 323,
+            "active_customers": [
+                "request_10"
+            ],
+            "cost_H": 1420.0,
+            "cost_MILP": 1420.0,
+            "diff": 0.0,
+            "MILP_time": 0.06206,
+            "total_time": 0.21239,
+            "MILP_gap": 0.0,
+            "total_cost": 2310,
+            "time_before_MILP": 0.09441,
+            "time_after_MILP": 0.05593,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1390.0,
+            "MILP_bound": 1390.0,
+            "MILP_runtime": 0.06170988082885742,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 3,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 433,
+            "active_customers": [
+                "request_21"
+            ],
+            "cost_H": 1450.0,
+            "cost_MILP": 1450.0,
+            "diff": 0.0,
+            "MILP_time": 0.01816,
+            "total_time": 0.12695,
+            "MILP_gap": 0.0,
+            "total_cost": 2720,
+            "time_before_MILP": 0.05359,
+            "time_after_MILP": 0.0552,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1420.0,
+            "MILP_bound": 1420.0,
+            "MILP_runtime": 0.0178680419921875,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 4,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 547,
+            "active_customers": [
+                "request_25"
+            ],
+            "cost_H": 1130.0,
+            "cost_MILP": 1130.0,
+            "diff": 0.0,
+            "MILP_time": 0.00729,
+            "total_time": 0.10677,
+            "MILP_gap": 0.0,
+            "total_cost": 3090,
+            "time_before_MILP": 0.0433,
+            "time_after_MILP": 0.05619,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1090.0,
+            "MILP_bound": 1090.0,
+            "MILP_runtime": 0.006994009017944336,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 555,
+            "active_customers": [
+                "request_6"
+            ],
+            "cost_H": 1240.0,
+            "cost_MILP": 1240.0,
+            "diff": 0.0,
+            "MILP_time": 0.01027,
+            "total_time": 0.11725,
+            "MILP_gap": 0.0,
+            "total_cost": 3250,
+            "time_before_MILP": 0.04709,
+            "time_after_MILP": 0.0599,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1190.0,
+            "MILP_bound": 1190.0,
+            "MILP_runtime": 0.009983062744140625,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 563,
+            "active_customers": [
+                "request_7"
+            ],
+            "cost_H": 12220.0,
+            "cost_MILP": 12220.0,
+            "diff": 0.0,
+            "MILP_time": 0.04442,
+            "total_time": 0.18259,
+            "MILP_gap": 0.0,
+            "total_cost": 3830,
+            "time_before_MILP": 0.06507,
+            "time_after_MILP": 0.07311,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 12170.0,
+            "MILP_bound": 12170.0,
+            "MILP_runtime": 0.04408097267150879,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 665,
+            "active_customers": [
+                "request_11"
+            ],
+            "cost_H": 12240.0,
+            "cost_MILP": 12240.0,
+            "diff": 0.0,
+            "MILP_time": 0.01759,
+            "total_time": 0.14372,
+            "MILP_gap": 0.0,
+            "total_cost": 4370,
+            "time_before_MILP": 0.05394,
+            "time_after_MILP": 0.07219,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 12190.0,
+            "MILP_bound": 12190.0,
+            "MILP_runtime": 0.01728200912475586,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 685,
+            "active_customers": [
+                "request_26"
+            ],
+            "cost_H": 12370.0,
+            "cost_MILP": 12370.0,
+            "diff": 0.0,
+            "MILP_time": 0.02431,
+            "total_time": 0.18918,
+            "MILP_gap": 0.00974025974025974,
+            "total_cost": 4670,
+            "time_before_MILP": 0.05904,
+            "time_after_MILP": 0.10584,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 12320.0,
+            "MILP_bound": 12200.0,
+            "MILP_runtime": 0.024010896682739258,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 773,
+            "active_customers": [
+                "request_43"
+            ],
+            "cost_H": 12040.0,
+            "cost_MILP": 12040.0,
+            "diff": 0.0,
+            "MILP_time": 0.0331,
+            "total_time": 0.25155,
+            "MILP_gap": 0.005838198498748957,
+            "total_cost": 4690,
+            "time_before_MILP": 0.10076,
+            "time_after_MILP": 0.11769,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 11990.0,
+            "MILP_bound": 11920.0,
+            "MILP_runtime": 0.032691001892089844,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 827,
+            "active_customers": [
+                "request_8"
+            ],
+            "cost_H": 12360.0,
+            "cost_MILP": 12300.0,
+            "diff": 60.0,
+            "MILP_time": 0.20592,
+            "total_time": 0.46874,
+            "MILP_gap": 0.003463563970770486,
+            "total_cost": 4950,
+            "time_before_MILP": 0.09251,
+            "time_after_MILP": 0.17031,
+            "active_tasks": 8,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 12250.0,
+            "MILP_bound": 12207.571341358062,
+            "MILP_runtime": 0.20561981201171875,
+            "MILP_sol_count": 2,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": true,
+            "MILP_reassigned_tasks": 1,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 839,
+            "active_customers": [
+                "request_34"
+            ],
+            "cost_H": 2030.0,
+            "cost_MILP": 1610.0,
+            "diff": 420.0,
+            "MILP_time": 0.49542,
+            "total_time": 0.74413,
+            "MILP_gap": 0.0,
+            "total_cost": 5070,
+            "time_before_MILP": 0.11542,
+            "time_after_MILP": 0.13328,
+            "active_tasks": 8,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1560.0,
+            "MILP_bound": 1560.0,
+            "MILP_runtime": 0.49495911598205566,
+            "MILP_sol_count": 3,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": true,
+            "MILP_reassigned_tasks": 2,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 855,
+            "active_customers": [
+                "request_20"
+            ],
+            "cost_H": 1700.0,
+            "cost_MILP": 1700.0,
+            "diff": 0.0,
+            "MILP_time": 0.26222,
+            "total_time": 0.60418,
+            "MILP_gap": 0.0,
+            "total_cost": 5210,
+            "time_before_MILP": 0.15396,
+            "time_after_MILP": 0.18801,
+            "active_tasks": 9,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1650.0,
+            "MILP_bound": 1650.0,
+            "MILP_runtime": 0.26169300079345703,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 967,
+            "active_customers": [
+                "request_27"
+            ],
+            "cost_H": 1440.0,
+            "cost_MILP": 1440.0,
+            "diff": 0.0,
+            "MILP_time": 0.08765,
+            "total_time": 0.36594,
+            "MILP_gap": 0.0,
+            "total_cost": 5330,
+            "time_before_MILP": 0.11922,
+            "time_after_MILP": 0.15907,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1390.0,
+            "MILP_bound": 1390.0,
+            "MILP_runtime": 0.08731698989868164,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1049,
+            "active_customers": [
+                "request_13"
+            ],
+            "cost_H": 1360.0,
+            "cost_MILP": 1360.0,
+            "diff": 0.0,
+            "MILP_time": 0.0289,
+            "total_time": 0.29323,
+            "MILP_gap": 0.007633587786259542,
+            "total_cost": 5450,
+            "time_before_MILP": 0.10819,
+            "time_after_MILP": 0.15614,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1310.0,
+            "MILP_bound": 1300.0,
+            "MILP_runtime": 0.028361082077026367,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1127,
+            "active_customers": [
+                "request_12"
+            ],
+            "cost_H": 1190.0,
+            "cost_MILP": 1190.0,
+            "diff": 0.0,
+            "MILP_time": 0.01428,
+            "total_time": 0.23295,
+            "MILP_gap": 0.0,
+            "total_cost": 5750,
+            "time_before_MILP": 0.07186,
+            "time_after_MILP": 0.14681,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1140.0,
+            "MILP_bound": 1140.0,
+            "MILP_runtime": 0.013962030410766602,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1129,
+            "active_customers": [
+                "request_28"
+            ],
+            "cost_H": 1210.0,
+            "cost_MILP": 1210.0,
+            "diff": 0.0,
+            "MILP_time": 0.05172,
+            "total_time": 0.28086,
+            "MILP_gap": 0.0,
+            "total_cost": 5770,
+            "time_before_MILP": 0.10095,
+            "time_after_MILP": 0.12819,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1160.0,
+            "MILP_bound": 1160.0,
+            "MILP_runtime": 0.05144309997558594,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1235,
+            "active_customers": [
+                "request_46"
+            ],
+            "cost_H": 1150.0,
+            "cost_MILP": 1150.0,
+            "diff": 0.0,
+            "MILP_time": 0.0146,
+            "total_time": 0.30417,
+            "MILP_gap": 0.0,
+            "total_cost": 6030,
+            "time_before_MILP": 0.08385,
+            "time_after_MILP": 0.20572,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1100.0,
+            "MILP_bound": 1100.0,
+            "MILP_runtime": 0.014288187026977539,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1241,
+            "active_customers": [
+                "request_36"
+            ],
+            "cost_H": 1240.0,
+            "cost_MILP": 1240.0,
+            "diff": 0.0,
+            "MILP_time": 0.02902,
+            "total_time": 0.27274,
+            "MILP_gap": 0.0,
+            "total_cost": 6250,
+            "time_before_MILP": 0.06751,
+            "time_after_MILP": 0.17622,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1190.0,
+            "MILP_bound": 1190.0,
+            "MILP_runtime": 0.02870011329650879,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1261,
+            "active_customers": [
+                "request_16"
+            ],
+            "cost_H": 1500.0,
+            "cost_MILP": 1500.0,
+            "diff": 0.0,
+            "MILP_time": 0.12998,
+            "total_time": 0.54433,
+            "MILP_gap": 0.0,
+            "total_cost": 6510,
+            "time_before_MILP": 0.14901,
+            "time_after_MILP": 0.26533,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1450.0,
+            "MILP_bound": 1450.0,
+            "MILP_runtime": 0.12950801849365234,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1321,
+            "active_customers": [
+                "request_29"
+            ],
+            "cost_H": 1210.0,
+            "cost_MILP": 1210.0,
+            "diff": 0.0,
+            "MILP_time": 0.04334,
+            "total_time": 0.44542,
+            "MILP_gap": 0.0,
+            "total_cost": 6610,
+            "time_before_MILP": 0.12454,
+            "time_after_MILP": 0.27754,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1160.0,
+            "MILP_bound": 1160.0,
+            "MILP_runtime": 0.04298710823059082,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1357,
+            "active_customers": [
+                "request_24"
+            ],
+            "cost_H": 1850.0,
+            "cost_MILP": 1850.0,
+            "diff": 0.0,
+            "MILP_time": 0.12074,
+            "total_time": 0.46777,
+            "MILP_gap": 0.0,
+            "total_cost": 7250,
+            "time_before_MILP": 0.13443,
+            "time_after_MILP": 0.2126,
+            "active_tasks": 8,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1800.0,
+            "MILP_bound": 1800.0,
+            "MILP_runtime": 0.1200571060180664,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 5,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1399,
+            "active_customers": [
+                "request_19"
+            ],
+            "cost_H": 1850.0,
+            "cost_MILP": 1850.0,
+            "diff": 0.0,
+            "MILP_time": 0.05863,
+            "total_time": 0.37618,
+            "MILP_gap": 0.0,
+            "total_cost": 7560,
+            "time_before_MILP": 0.11033,
+            "time_after_MILP": 0.20721,
+            "active_tasks": 9,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1800.0,
+            "MILP_bound": 1800.0,
+            "MILP_runtime": 0.058302879333496094,
+            "MILP_sol_count": 2,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1433,
+            "active_customers": [
+                "request_18"
+            ],
+            "cost_H": 1720.0,
+            "cost_MILP": 1720.0,
+            "diff": 0.0,
+            "MILP_time": 0.05735,
+            "total_time": 0.37,
+            "MILP_gap": 0.0,
+            "total_cost": 7620,
+            "time_before_MILP": 0.09223,
+            "time_after_MILP": 0.22041,
+            "active_tasks": 9,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1660.0,
+            "MILP_bound": 1660.0,
+            "MILP_runtime": 0.05702996253967285,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1725,
+            "active_customers": [
+                "request_22"
+            ],
+            "cost_H": 790.0,
+            "cost_MILP": 790.0,
+            "diff": 0.0,
+            "MILP_time": 0.00471,
+            "total_time": 0.24845,
+            "MILP_gap": 0.0,
+            "total_cost": 7760,
+            "time_before_MILP": 0.04644,
+            "time_after_MILP": 0.19731,
+            "active_tasks": 2,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 730.0,
+            "MILP_bound": 730.0,
+            "MILP_runtime": 0.004458904266357422,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1751,
+            "active_customers": [
+                "request_31"
+            ],
+            "cost_H": 960.0,
+            "cost_MILP": 960.0,
+            "diff": 0.0,
+            "MILP_time": 0.00466,
+            "total_time": 0.2948,
+            "MILP_gap": 0.0,
+            "total_cost": 8100,
+            "time_before_MILP": 0.05209,
+            "time_after_MILP": 0.23805,
+            "active_tasks": 3,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 900.0,
+            "MILP_bound": 900.0,
+            "MILP_runtime": 0.004380941390991211,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 0.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1793,
+            "active_customers": [
+                "request_30"
+            ],
+            "cost_H": 1190.0,
+            "cost_MILP": 1190.0,
+            "diff": 0.0,
+            "MILP_time": 0.00438,
+            "total_time": 0.26278,
+            "MILP_gap": 0.0,
+            "total_cost": 8500,
+            "time_before_MILP": 0.05722,
+            "time_after_MILP": 0.20117,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1130.0,
+            "MILP_bound": 1130.0,
+            "MILP_runtime": 0.004136085510253906,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 0.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1843,
+            "active_customers": [
+                "request_41"
+            ],
+            "cost_H": 1370.0,
+            "cost_MILP": 1370.0,
+            "diff": 0.0,
+            "MILP_time": 0.00465,
+            "total_time": 0.3116,
+            "MILP_gap": 0.0,
+            "total_cost": 8880,
+            "time_before_MILP": 0.09432,
+            "time_after_MILP": 0.21263,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1310.0,
+            "MILP_bound": 1310.0,
+            "MILP_runtime": 0.004396915435791016,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 0.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 1879,
+            "active_customers": [
+                "request_33"
+            ],
+            "cost_H": 1690.0,
+            "cost_MILP": 1690.0,
+            "diff": 0.0,
+            "MILP_time": 0.04156,
+            "total_time": 0.35587,
+            "MILP_gap": 0.0,
+            "total_cost": 9200,
+            "time_before_MILP": 0.08791,
+            "time_after_MILP": 0.22639,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1630.0,
+            "MILP_bound": 1630.0,
+            "MILP_runtime": 0.04125785827636719,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2027,
+            "active_customers": [
+                "request_23"
+            ],
+            "cost_H": 1010.0,
+            "cost_MILP": 1010.0,
+            "diff": 0.0,
+            "MILP_time": 0.01959,
+            "total_time": 0.31598,
+            "MILP_gap": 0.0,
+            "total_cost": 9460,
+            "time_before_MILP": 0.06276,
+            "time_after_MILP": 0.23363,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 950.0,
+            "MILP_bound": 950.0,
+            "MILP_runtime": 0.019317150115966797,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2053,
+            "active_customers": [
+                "request_38"
+            ],
+            "cost_H": 1100.0,
+            "cost_MILP": 1100.0,
+            "diff": 0.0,
+            "MILP_time": 0.0197,
+            "total_time": 0.32923,
+            "MILP_gap": 0.0,
+            "total_cost": 9740,
+            "time_before_MILP": 0.07069,
+            "time_after_MILP": 0.23884,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1040.0,
+            "MILP_bound": 1040.0,
+            "MILP_runtime": 0.019412994384765625,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2179,
+            "active_customers": [
+                "request_35"
+            ],
+            "cost_H": 1000.0,
+            "cost_MILP": 1000.0,
+            "diff": 0.0,
+            "MILP_time": 0.02846,
+            "total_time": 0.48693,
+            "MILP_gap": 0.0,
+            "total_cost": 9780,
+            "time_before_MILP": 0.07601,
+            "time_after_MILP": 0.38246,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 940.0,
+            "MILP_bound": 940.0,
+            "MILP_runtime": 0.028198957443237305,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2245,
+            "active_customers": [
+                "request_32"
+            ],
+            "cost_H": 1160.0,
+            "cost_MILP": 1160.0,
+            "diff": 0.0,
+            "MILP_time": 0.03474,
+            "total_time": 0.66169,
+            "MILP_gap": 0.0,
+            "total_cost": 10200,
+            "time_before_MILP": 0.13199,
+            "time_after_MILP": 0.49496,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1100.0,
+            "MILP_bound": 1100.0,
+            "MILP_runtime": 0.03437089920043945,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2246,
+            "active_customers": [
+                "request_49"
+            ],
+            "cost_H": 1780.0,
+            "cost_MILP": 1640.0,
+            "diff": 140.0,
+            "MILP_time": 0.1111,
+            "total_time": 0.93836,
+            "MILP_gap": 0.0,
+            "total_cost": 10680,
+            "time_before_MILP": 0.17857,
+            "time_after_MILP": 0.64869,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1580.0,
+            "MILP_bound": 1580.0,
+            "MILP_runtime": 0.11067914962768555,
+            "MILP_sol_count": 3,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": true,
+            "MILP_reassigned_tasks": 2,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2351,
+            "active_customers": [
+                "request_37"
+            ],
+            "cost_H": 1710.0,
+            "cost_MILP": 1710.0,
+            "diff": 0.0,
+            "MILP_time": 0.0386,
+            "total_time": 0.7302,
+            "MILP_gap": 0.0,
+            "total_cost": 11000,
+            "time_before_MILP": 0.16232,
+            "time_after_MILP": 0.52928,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1650.0,
+            "MILP_bound": 1650.0,
+            "MILP_runtime": 0.038233041763305664,
+            "MILP_sol_count": 2,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2401,
+            "active_customers": [
+                "request_39"
+            ],
+            "cost_H": 1500.0,
+            "cost_MILP": 1500.0,
+            "diff": 0.0,
+            "MILP_time": 0.04318,
+            "total_time": 0.73125,
+            "MILP_gap": 0.0,
+            "total_cost": 11300,
+            "time_before_MILP": 0.15152,
+            "time_after_MILP": 0.53656,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1440.0,
+            "MILP_bound": 1440.0,
+            "MILP_runtime": 0.04279494285583496,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2467,
+            "active_customers": [
+                "request_45"
+            ],
+            "cost_H": 1470.0,
+            "cost_MILP": 1470.0,
+            "diff": 0.0,
+            "MILP_time": 0.06406,
+            "total_time": 0.78829,
+            "MILP_gap": 0.0,
+            "total_cost": 11420,
+            "time_before_MILP": 0.18026,
+            "time_after_MILP": 0.54397,
+            "active_tasks": 6,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1410.0,
+            "MILP_bound": 1410.0,
+            "MILP_runtime": 0.0634298324584961,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2555,
+            "active_customers": [
+                "request_42"
+            ],
+            "cost_H": 1680.0,
+            "cost_MILP": 1680.0,
+            "diff": 0.0,
+            "MILP_time": 0.03497,
+            "total_time": 0.79249,
+            "MILP_gap": 0.008230452674897214,
+            "total_cost": 11880,
+            "time_before_MILP": 0.16457,
+            "time_after_MILP": 0.59296,
+            "active_tasks": 7,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1620.0,
+            "MILP_bound": 1606.6666666666665,
+            "MILP_runtime": 0.03458404541015625,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2773,
+            "active_customers": [
+                "request_40"
+            ],
+            "cost_H": 1380.0,
+            "cost_MILP": 1380.0,
+            "diff": 0.0,
+            "MILP_time": 0.02261,
+            "total_time": 0.73871,
+            "MILP_gap": 0.0,
+            "total_cost": 12200,
+            "time_before_MILP": 0.12292,
+            "time_after_MILP": 0.59318,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1320.0,
+            "MILP_bound": 1320.0,
+            "MILP_runtime": 0.022054195404052734,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2863,
+            "active_customers": [
+                "request_44"
+            ],
+            "cost_H": 1140.0,
+            "cost_MILP": 1140.0,
+            "diff": 0.0,
+            "MILP_time": 0.01316,
+            "total_time": 0.73892,
+            "MILP_gap": 0.0,
+            "total_cost": 12520,
+            "time_before_MILP": 0.11769,
+            "time_after_MILP": 0.60808,
+            "active_tasks": 3,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1080.0,
+            "MILP_bound": 1080.0,
+            "MILP_runtime": 0.012509822845458984,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2877,
+            "active_customers": [
+                "request_48"
+            ],
+            "cost_H": 1220.0,
+            "cost_MILP": 1220.0,
+            "diff": 0.0,
+            "MILP_time": 0.01575,
+            "total_time": 0.45538,
+            "MILP_gap": 0.0,
+            "total_cost": 12640,
+            "time_before_MILP": 0.06712,
+            "time_after_MILP": 0.37251,
+            "active_tasks": 4,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1160.0,
+            "MILP_bound": 1160.0,
+            "MILP_runtime": 0.015311956405639648,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 2939,
+            "active_customers": [
+                "request_50"
+            ],
+            "cost_H": 1570.0,
+            "cost_MILP": 1570.0,
+            "diff": 0.0,
+            "MILP_time": 0.01398,
+            "total_time": 0.58242,
+            "MILP_gap": 0.0,
+            "total_cost": 13160,
+            "time_before_MILP": 0.08592,
+            "time_after_MILP": 0.48252,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1510.0,
+            "MILP_bound": 1510.0,
+            "MILP_runtime": 0.013738870620727539,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        },
+        {
+            "current_time": 3065,
+            "active_customers": [
+                "request_47"
+            ],
+            "cost_H": 1410.0,
+            "cost_MILP": 1410.0,
+            "diff": 0.0,
+            "MILP_time": 0.03742,
+            "total_time": 0.5672,
+            "MILP_gap": 0.0,
+            "total_cost": 13240,
+            "time_before_MILP": 0.08004,
+            "time_after_MILP": 0.44974,
+            "active_tasks": 5,
+            "MILP_status": "OPTIMAL",
+            "MILP_obj": 1350.0,
+            "MILP_bound": 1350.0,
+            "MILP_runtime": 0.03717613220214844,
+            "MILP_sol_count": 1,
+            "MILP_node_count": 1.0,
+            "MILP_threads": 4,
+            "MILP_plan_changed": false,
+            "MILP_reassigned_tasks": 0,
+            "MILP_n_robots_used": 6,
+            "MILP_backup_used": false
+        }
+    ],
+    "route_validator_time": 0.07105398178100586,
+    "invalid": true,
+    "invalid_count": 37,
+    "invalid_times": [
+        [
+            563.0,
+            "request_7"
+        ],
+        [
+            665.0,
+            "request_11"
+        ],
+        [
+            685.0,
+            "request_26"
+        ],
+        [
+            773.0,
+            "request_43"
+        ],
+        [
+            827.0,
+            "request_8"
+        ],
+        [
+            839.0,
+            "request_34"
+        ],
+        [
+            855.0,
+            "request_20"
+        ],
+        [
+            967.0,
+            "request_27"
+        ],
+        [
+            1049.0,
+            "request_13"
+        ],
+        [
+            1127.0,
+            "request_12"
+        ],
+        [
+            1129.0,
+            "request_28"
+        ],
+        [
+            1235.0,
+            "request_46"
+        ],
+        [
+            1241.0,
+            "request_36"
+        ],
+        [
+            1261.0,
+            "request_16"
+        ],
+        [
+            1321.0,
+            "request_29"
+        ],
+        [
+            1357.0,
+            "request_24"
+        ],
+        [
+            1399.0,
+            "request_19"
+        ],
+        [
+            1433.0,
+            "request_18"
+        ],
+        [
+            1725.0,
+            "request_22"
+        ],
+        [
+            1751.0,
+            "request_31"
+        ],
+        [
+            1793.0,
+            "request_30"
+        ],
+        [
+            1843.0,
+            "request_41"
+        ],
+        [
+            1879.0,
+            "request_33"
+        ],
+        [
+            2027.0,
+            "request_23"
+        ],
+        [
+            2053.0,
+            "request_38"
+        ],
+        [
+            2179.0,
+            "request_35"
+        ],
+        [
+            2245.0,
+            "request_32"
+        ],
+        [
+            2246.0,
+            "request_49"
+        ],
+        [
+            2351.0,
+            "request_37"
+        ],
+        [
+            2401.0,
+            "request_39"
+        ],
+        [
+            2467.0,
+            "request_45"
+        ],
+        [
+            2555.0,
+            "request_42"
+        ],
+        [
+            2773.0,
+            "request_40"
+        ],
+        [
+            2863.0,
+            "request_44"
+        ],
+        [
+            2877.0,
+            "request_48"
+        ],
+        [
+            2939.0,
+            "request_50"
+        ],
+        [
+            3065.0,
+            "request_47"
+        ]
+    ],
+    "current_invalid": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+    ],
+    "computational_time": 22.09121060371399
+}

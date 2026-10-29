@@ -1,0 +1,17 @@
+{\color{red}
+\begin{table}[htb]
+\centering
+\caption{Computational budget per replanning event, $T$, on the grid instances with wide windows and 6 or 9 robots (40 instances). Solved: instances completed by the method. Time: mean computation time per request (s). $\Delta$: mean relative cost difference (\%) of WS-MILP with respect to MCFI, MCFI+R and the stand-alone MILP with the same budget (number of instances solved by both in parentheses). MCFI and MCFI+R take 0.3 and 2.4~s per request.}
+\label{tab:budget}
+\begin{tabular}{r|rr|rrrrr}
+\toprule
+ & \multicolumn{2}{c|}{MILP} & \multicolumn{5}{c}{WS-MILP} \\
+$T$ (s) & Solved & Time & Solved & Time & $\Delta$ MCFI & $\Delta$ MCFI+R & $\Delta$ MILP \\
+\midrule
+10 & 6/40 & 2.7 & 40/40 & 10.0 & -4.5 & 6.8 & -26.2 (6) \\
+60 & 8/40 & 14.5 & 40/40 & 46.9 & -10.4 & 0.2 & -3.5 (8) \\
+300 & 16/40 & 93.3 & 40/40 & 195.9 & -17.3 & -7.6 & -3.1 (16) \\
+\bottomrule
+\end{tabular}
+\end{table}
+}
