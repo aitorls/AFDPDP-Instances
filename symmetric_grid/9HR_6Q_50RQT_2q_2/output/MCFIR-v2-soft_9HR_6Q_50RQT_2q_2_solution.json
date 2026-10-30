@@ -1,22 +1,22 @@
 {
     "instance_name": "9HR_6Q_50RQT_2q_2",
     "solution_name": "9HR_6Q_50RQT_2q_2_solution",
-    "cost": 11630.0,
-    "route_cost": 11630.0,
+    "cost": 11580.0,
+    "route_cost": 11580.0,
     "delay_cost": 0.0,
     "delay": 0.0,
-    "max_time": 4912.0,
-    "distance_travelled": 11580.0,
+    "max_time": 4892.0,
+    "distance_travelled": 11540.0,
     "costs_routes": {
-        "robot_1": 3020.0,
-        "robot_2": 940.0,
+        "robot_1": 4320.0,
+        "robot_2": 0.0,
         "robot_3": 0.0,
         "robot_4": 0.0,
         "robot_5": 0.0,
-        "robot_6": 3200.0,
-        "robot_7": 2400.0,
+        "robot_6": 2640.0,
+        "robot_7": 2380.0,
         "robot_8": 0.0,
-        "robot_9": 2020.0,
+        "robot_9": 2200.0,
         "extra_robot_1": 0.0
     },
     "delay_cost_routes": {
@@ -32,15 +32,15 @@
         "extra_robot_1": 0.0
     },
     "distances_routes": {
-        "robot_1": 3020.0,
-        "robot_2": 940.0,
+        "robot_1": 4320.0,
+        "robot_2": 0.0,
         "robot_3": 0.0,
         "robot_4": 0.0,
         "robot_5": 0.0,
-        "robot_6": 3200.0,
-        "robot_7": 2400.0,
+        "robot_6": 2640.0,
+        "robot_7": 2380.0,
         "robot_8": 0.0,
-        "robot_9": 2020.0,
+        "robot_9": 2200.0,
         "extra_robot_1": 0.0
     },
     "complete_routes": {
@@ -266,35 +266,119 @@
                 ]
             },
             {
-                "node": "delivery_request_34",
-                "node_id": "truck_7",
-                "arrival_time": 1493.0,
-                "departure_time": 1514.0,
-                "current_cost": 1390.0,
-                "current_load": 0,
-                "distance_travelled": 1390.0,
-                "ongoing_request": []
+                "node": "pickup_request_35",
+                "node_id": "f6_3_7",
+                "arrival_time": 1563.0,
+                "departure_time": 1564.0,
+                "current_cost": 1460.0,
+                "current_load": 4,
+                "distance_travelled": 1460.0,
+                "ongoing_request": [
+                    "request_34",
+                    "request_35"
+                ]
             },
             {
                 "node": "pickup_request_33",
                 "node_id": "f5_0_5",
                 "arrival_time": 1704.0,
                 "departure_time": 1705.0,
-                "current_cost": 1580.0,
-                "current_load": 2,
-                "distance_travelled": 1580.0,
+                "current_cost": 1600.0,
+                "current_load": 6,
+                "distance_travelled": 1600.0,
                 "ongoing_request": [
+                    "request_34",
+                    "request_35",
                     "request_33"
+                ]
+            },
+            {
+                "node": "delivery_request_34",
+                "node_id": "truck_7",
+                "arrival_time": 1895.0,
+                "departure_time": 1896.0,
+                "current_cost": 1790.0,
+                "current_load": 4,
+                "distance_travelled": 1790.0,
+                "ongoing_request": [
+                    "request_35",
+                    "request_33"
+                ]
+            },
+            {
+                "node": "pickup_request_21",
+                "node_id": "f0_1_7",
+                "arrival_time": 2156.0,
+                "departure_time": 2157.0,
+                "current_cost": 2050.0,
+                "current_load": 6,
+                "distance_travelled": 2050.0,
+                "ongoing_request": [
+                    "request_35",
+                    "request_33",
+                    "request_21"
                 ]
             },
             {
                 "node": "delivery_request_33",
                 "node_id": "truck_8",
-                "arrival_time": 1945.0,
+                "arrival_time": 2467.0,
+                "departure_time": 2468.0,
+                "current_cost": 2360.0,
+                "current_load": 4,
+                "distance_travelled": 2360.0,
+                "ongoing_request": [
+                    "request_35",
+                    "request_21"
+                ]
+            },
+            {
+                "node": "pickup_request_45",
+                "node_id": "f9_3_0",
+                "arrival_time": 2608.0,
+                "departure_time": 2609.0,
+                "current_cost": 2500.0,
+                "current_load": 6,
+                "distance_travelled": 2500.0,
+                "ongoing_request": [
+                    "request_35",
+                    "request_21",
+                    "request_45"
+                ]
+            },
+            {
+                "node": "delivery_request_21",
+                "node_id": "truck_9",
+                "arrival_time": 2719.0,
+                "departure_time": 2720.0,
+                "current_cost": 2610.0,
+                "current_load": 4,
+                "distance_travelled": 2610.0,
+                "ongoing_request": [
+                    "request_35",
+                    "request_45"
+                ]
+            },
+            {
+                "node": "delivery_request_35",
+                "node_id": "truck_9",
+                "arrival_time": 2720.0,
+                "departure_time": 2721.0,
+                "current_cost": 2610.0,
+                "current_load": 2,
+                "distance_travelled": 2610.0,
+                "ongoing_request": [
+                    "request_45"
+                ]
+            },
+            {
+                "node": "delivery_request_45",
+                "node_id": "truck_8",
+                "arrival_time": 2791.0,
                 "departure_time": 3158.0,
-                "current_cost": 1820.0,
+                "current_cost": 2680.0,
                 "current_load": 0,
-                "distance_travelled": 1820.0,
+                "distance_travelled": 2680.0,
                 "ongoing_request": []
             },
             {
@@ -302,9 +386,9 @@
                 "node_id": "f0_1_1",
                 "arrival_time": 3528.0,
                 "departure_time": 3529.0,
-                "current_cost": 2190.0,
+                "current_cost": 3050.0,
                 "current_load": 2,
-                "distance_travelled": 2190.0,
+                "distance_travelled": 3050.0,
                 "ongoing_request": [
                     "request_30"
                 ]
@@ -313,20 +397,64 @@
                 "node": "delivery_request_30",
                 "node_id": "truck_9",
                 "arrival_time": 3949.0,
-                "departure_time": 4500.0,
-                "current_cost": 2610.0,
+                "departure_time": 4036.0,
+                "current_cost": 3470.0,
                 "current_load": 0,
-                "distance_travelled": 2610.0,
+                "distance_travelled": 3470.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_42",
+                "node_id": "f7_4_4",
+                "arrival_time": 4196.0,
+                "departure_time": 4197.0,
+                "current_cost": 3630.0,
+                "current_load": 2,
+                "distance_travelled": 3630.0,
+                "ongoing_request": [
+                    "request_42"
+                ]
+            },
+            {
+                "node": "delivery_request_42",
+                "node_id": "truck_8",
+                "arrival_time": 4307.0,
+                "departure_time": 4308.0,
+                "current_cost": 3740.0,
+                "current_load": 0,
+                "distance_travelled": 3740.0,
+                "ongoing_request": []
+            },
+            {
+                "node": "pickup_request_47",
+                "node_id": "f7_2_7",
+                "arrival_time": 4408.0,
+                "departure_time": 4409.0,
+                "current_cost": 3840.0,
+                "current_load": 2,
+                "distance_travelled": 3840.0,
+                "ongoing_request": [
+                    "request_47"
+                ]
+            },
+            {
+                "node": "delivery_request_47",
+                "node_id": "truck_2",
+                "arrival_time": 4519.0,
+                "departure_time": 4520.0,
+                "current_cost": 3950.0,
+                "current_load": 0,
+                "distance_travelled": 3950.0,
                 "ongoing_request": []
             },
             {
                 "node": "pickup_request_48",
                 "node_id": "f7_0_7",
-                "arrival_time": 4670.0,
-                "departure_time": 4671.0,
-                "current_cost": 2780.0,
+                "arrival_time": 4650.0,
+                "departure_time": 4651.0,
+                "current_cost": 4080.0,
                 "current_load": 2,
-                "distance_travelled": 2780.0,
+                "distance_travelled": 4080.0,
                 "ongoing_request": [
                     "request_48"
                 ]
@@ -334,11 +462,11 @@
             {
                 "node": "delivery_request_48",
                 "node_id": "truck_8",
-                "arrival_time": 4791.0,
+                "arrival_time": 4771.0,
                 "departure_time": 5626.0,
-                "current_cost": 2900.0,
+                "current_cost": 4200.0,
                 "current_load": 0,
-                "distance_travelled": 2900.0,
+                "distance_travelled": 4200.0,
                 "ongoing_request": []
             },
             {
@@ -346,9 +474,9 @@
                 "node_id": "depot_9",
                 "arrival_time": 5746.0,
                 "departure_time": 5746.0,
-                "current_cost": 3020.0,
+                "current_cost": 4320.0,
                 "current_load": 0,
-                "distance_travelled": 3020.0,
+                "distance_travelled": 4320.0,
                 "ongoing_request": []
             }
         ],
@@ -357,108 +485,20 @@
                 "node": "start_robot_2",
                 "node_id": "depot_9",
                 "arrival_time": 0.0,
-                "departure_time": 1492.0,
+                "departure_time": 5676.0,
                 "current_cost": 0.0,
                 "current_load": 0,
                 "distance_travelled": 0.0,
                 "ongoing_request": []
             },
             {
-                "node": "pickup_request_49",
-                "node_id": "f4_3_0",
-                "arrival_time": 1632.0,
-                "departure_time": 1633.0,
-                "current_cost": 140.0,
-                "current_load": 2,
-                "distance_travelled": 140.0,
-                "ongoing_request": [
-                    "request_49"
-                ]
-            },
-            {
-                "node": "delivery_request_49",
-                "node_id": "truck_4",
-                "arrival_time": 1743.0,
-                "departure_time": 2230.0,
-                "current_cost": 250.0,
-                "current_load": 0,
-                "distance_travelled": 250.0,
-                "ongoing_request": []
-            },
-            {
-                "node": "pickup_request_45",
-                "node_id": "f9_3_0",
-                "arrival_time": 2260.0,
-                "departure_time": 2261.0,
-                "current_cost": 280.0,
-                "current_load": 2,
-                "distance_travelled": 280.0,
-                "ongoing_request": [
-                    "request_45"
-                ]
-            },
-            {
-                "node": "delivery_request_45",
-                "node_id": "truck_8",
-                "arrival_time": 2401.0,
-                "departure_time": 4036.0,
-                "current_cost": 420.0,
-                "current_load": 0,
-                "distance_travelled": 420.0,
-                "ongoing_request": []
-            },
-            {
-                "node": "pickup_request_42",
-                "node_id": "f7_4_4",
-                "arrival_time": 4146.0,
-                "departure_time": 4147.0,
-                "current_cost": 530.0,
-                "current_load": 2,
-                "distance_travelled": 530.0,
-                "ongoing_request": [
-                    "request_42"
-                ]
-            },
-            {
-                "node": "delivery_request_42",
-                "node_id": "truck_8",
-                "arrival_time": 4257.0,
-                "departure_time": 4258.0,
-                "current_cost": 640.0,
-                "current_load": 0,
-                "distance_travelled": 640.0,
-                "ongoing_request": []
-            },
-            {
-                "node": "pickup_request_47",
-                "node_id": "f7_2_7",
-                "arrival_time": 4358.0,
-                "departure_time": 4359.0,
-                "current_cost": 740.0,
-                "current_load": 2,
-                "distance_travelled": 740.0,
-                "ongoing_request": [
-                    "request_47"
-                ]
-            },
-            {
-                "node": "delivery_request_47",
-                "node_id": "truck_2",
-                "arrival_time": 4469.0,
-                "departure_time": 5656.0,
-                "current_cost": 850.0,
-                "current_load": 0,
-                "distance_travelled": 850.0,
-                "ongoing_request": []
-            },
-            {
                 "node": "end_robot_2",
                 "node_id": "depot_9",
-                "arrival_time": 5746.0,
+                "arrival_time": 5676.0,
                 "departure_time": 5746.0,
-                "current_cost": 940.0,
+                "current_cost": 0.0,
                 "current_load": 0,
-                "distance_travelled": 940.0,
+                "distance_travelled": 0.0,
                 "ongoing_request": []
             }
         ],
@@ -742,42 +782,20 @@
                 "node": "delivery_request_16",
                 "node_id": "truck_1",
                 "arrival_time": 1615.0,
-                "departure_time": 1714.0,
+                "departure_time": 2026.0,
                 "current_cost": 1600.0,
                 "current_load": 0,
                 "distance_travelled": 1600.0,
                 "ongoing_request": []
             },
             {
-                "node": "pickup_request_21",
-                "node_id": "f0_1_7",
-                "arrival_time": 1824.0,
-                "departure_time": 1825.0,
-                "current_cost": 1710.0,
-                "current_load": 2,
-                "distance_travelled": 1710.0,
-                "ongoing_request": [
-                    "request_21"
-                ]
-            },
-            {
-                "node": "delivery_request_21",
-                "node_id": "truck_9",
-                "arrival_time": 2185.0,
-                "departure_time": 2186.0,
-                "current_cost": 2070.0,
-                "current_load": 0,
-                "distance_travelled": 2070.0,
-                "ongoing_request": []
-            },
-            {
                 "node": "pickup_request_43",
                 "node_id": "f3_2_6",
-                "arrival_time": 2396.0,
-                "departure_time": 2397.0,
-                "current_cost": 2280.0,
+                "arrival_time": 2146.0,
+                "departure_time": 2147.0,
+                "current_cost": 1720.0,
                 "current_load": 2,
-                "distance_travelled": 2280.0,
+                "distance_travelled": 1720.0,
                 "ongoing_request": [
                     "request_43"
                 ]
@@ -785,21 +803,21 @@
             {
                 "node": "delivery_request_43",
                 "node_id": "truck_1",
-                "arrival_time": 2517.0,
-                "departure_time": 2518.0,
-                "current_cost": 2400.0,
+                "arrival_time": 2267.0,
+                "departure_time": 2416.0,
+                "current_cost": 1840.0,
                 "current_load": 0,
-                "distance_travelled": 2400.0,
+                "distance_travelled": 1840.0,
                 "ongoing_request": []
             },
             {
                 "node": "pickup_request_22",
                 "node_id": "f0_1_3",
-                "arrival_time": 2668.0,
-                "departure_time": 2669.0,
-                "current_cost": 2550.0,
+                "arrival_time": 2566.0,
+                "departure_time": 2567.0,
+                "current_cost": 1990.0,
                 "current_load": 2,
-                "distance_travelled": 2550.0,
+                "distance_travelled": 1990.0,
                 "ongoing_request": [
                     "request_22"
                 ]
@@ -807,11 +825,11 @@
             {
                 "node": "delivery_request_22",
                 "node_id": "truck_7",
-                "arrival_time": 2969.0,
+                "arrival_time": 2867.0,
                 "departure_time": 3692.0,
-                "current_cost": 2850.0,
+                "current_cost": 2290.0,
                 "current_load": 0,
-                "distance_travelled": 2850.0,
+                "distance_travelled": 2290.0,
                 "ongoing_request": []
             },
             {
@@ -819,9 +837,9 @@
                 "node_id": "f7_1_7",
                 "arrival_time": 3752.0,
                 "departure_time": 3753.0,
-                "current_cost": 2910.0,
+                "current_cost": 2350.0,
                 "current_load": 2,
-                "distance_travelled": 2910.0,
+                "distance_travelled": 2350.0,
                 "ongoing_request": [
                     "request_39"
                 ]
@@ -831,9 +849,9 @@
                 "node_id": "truck_6",
                 "arrival_time": 3803.0,
                 "departure_time": 3864.0,
-                "current_cost": 2960.0,
+                "current_cost": 2400.0,
                 "current_load": 0,
-                "distance_travelled": 2960.0,
+                "distance_travelled": 2400.0,
                 "ongoing_request": []
             },
             {
@@ -841,9 +859,9 @@
                 "node_id": "f7_3_1",
                 "arrival_time": 3994.0,
                 "departure_time": 3995.0,
-                "current_cost": 3090.0,
+                "current_cost": 2530.0,
                 "current_load": 2,
-                "distance_travelled": 3090.0,
+                "distance_travelled": 2530.0,
                 "ongoing_request": [
                     "request_41"
                 ]
@@ -853,9 +871,9 @@
                 "node_id": "truck_2",
                 "arrival_time": 4035.0,
                 "departure_time": 5676.0,
-                "current_cost": 3130.0,
+                "current_cost": 2570.0,
                 "current_load": 0,
-                "distance_travelled": 3130.0,
+                "distance_travelled": 2570.0,
                 "ongoing_request": []
             },
             {
@@ -863,9 +881,9 @@
                 "node_id": "depot_7",
                 "arrival_time": 5746.0,
                 "departure_time": 5746.0,
-                "current_cost": 3200.0,
+                "current_cost": 2640.0,
                 "current_load": 0,
-                "distance_travelled": 3200.0,
+                "distance_travelled": 2640.0,
                 "ongoing_request": []
             }
         ],
@@ -874,7 +892,7 @@
                 "node": "start_robot_7",
                 "node_id": "depot_6",
                 "arrival_time": 0.0,
-                "departure_time": 126.0,
+                "departure_time": 127.0,
                 "current_cost": 0.0,
                 "current_load": 0,
                 "distance_travelled": 0.0,
@@ -883,8 +901,8 @@
             {
                 "node": "pickup_request_3",
                 "node_id": "f0_2_8",
-                "arrival_time": 186.0,
-                "departure_time": 187.0,
+                "arrival_time": 187.0,
+                "departure_time": 188.0,
                 "current_cost": 60.0,
                 "current_load": 2,
                 "distance_travelled": 60.0,
@@ -895,8 +913,8 @@
             {
                 "node": "delivery_request_3",
                 "node_id": "truck_5",
-                "arrival_time": 327.0,
-                "departure_time": 328.0,
+                "arrival_time": 328.0,
+                "departure_time": 329.0,
                 "current_cost": 200.0,
                 "current_load": 0,
                 "distance_travelled": 200.0,
@@ -905,8 +923,8 @@
             {
                 "node": "pickup_request_7",
                 "node_id": "f6_3_4",
-                "arrival_time": 428.0,
-                "departure_time": 429.0,
+                "arrival_time": 429.0,
+                "departure_time": 430.0,
                 "current_cost": 300.0,
                 "current_load": 2,
                 "distance_travelled": 300.0,
@@ -917,8 +935,8 @@
             {
                 "node": "pickup_request_29",
                 "node_id": "f2_1_8",
-                "arrival_time": 519.0,
-                "departure_time": 520.0,
+                "arrival_time": 520.0,
+                "departure_time": 521.0,
                 "current_cost": 390.0,
                 "current_load": 4,
                 "distance_travelled": 390.0,
@@ -930,8 +948,8 @@
             {
                 "node": "pickup_request_26",
                 "node_id": "f8_4_5",
-                "arrival_time": 670.0,
-                "departure_time": 671.0,
+                "arrival_time": 671.0,
+                "departure_time": 672.0,
                 "current_cost": 540.0,
                 "current_load": 6,
                 "distance_travelled": 540.0,
@@ -944,8 +962,8 @@
             {
                 "node": "delivery_request_7",
                 "node_id": "truck_8",
-                "arrival_time": 721.0,
-                "departure_time": 722.0,
+                "arrival_time": 722.0,
+                "departure_time": 723.0,
                 "current_cost": 590.0,
                 "current_load": 4,
                 "distance_travelled": 590.0,
@@ -957,8 +975,8 @@
             {
                 "node": "delivery_request_26",
                 "node_id": "truck_5",
-                "arrival_time": 892.0,
-                "departure_time": 893.0,
+                "arrival_time": 893.0,
+                "departure_time": 894.0,
                 "current_cost": 760.0,
                 "current_load": 2,
                 "distance_travelled": 760.0,
@@ -969,8 +987,8 @@
             {
                 "node": "delivery_request_29",
                 "node_id": "truck_5",
-                "arrival_time": 893.0,
-                "departure_time": 894.0,
+                "arrival_time": 894.0,
+                "departure_time": 895.0,
                 "current_cost": 760.0,
                 "current_load": 0,
                 "distance_travelled": 760.0,
@@ -979,8 +997,8 @@
             {
                 "node": "pickup_request_27",
                 "node_id": "f5_1_2",
-                "arrival_time": 1004.0,
-                "departure_time": 1005.0,
+                "arrival_time": 1005.0,
+                "departure_time": 1006.0,
                 "current_cost": 870.0,
                 "current_load": 2,
                 "distance_travelled": 870.0,
@@ -989,157 +1007,157 @@
                 ]
             },
             {
-                "node": "pickup_request_10",
-                "node_id": "f6_0_3",
-                "arrival_time": 1095.0,
-                "departure_time": 1096.0,
-                "current_cost": 960.0,
+                "node": "pickup_request_46",
+                "node_id": "f1_3_0",
+                "arrival_time": 1196.0,
+                "departure_time": 1197.0,
+                "current_cost": 1060.0,
                 "current_load": 4,
-                "distance_travelled": 960.0,
+                "distance_travelled": 1060.0,
                 "ongoing_request": [
                     "request_27",
-                    "request_10"
+                    "request_46"
                 ]
             },
             {
                 "node": "pickup_request_28",
                 "node_id": "f5_3_0",
-                "arrival_time": 1146.0,
-                "departure_time": 1147.0,
-                "current_cost": 1010.0,
+                "arrival_time": 1347.0,
+                "departure_time": 1348.0,
+                "current_cost": 1210.0,
                 "current_load": 6,
-                "distance_travelled": 1010.0,
+                "distance_travelled": 1210.0,
                 "ongoing_request": [
                     "request_27",
-                    "request_10",
+                    "request_46",
                     "request_28"
                 ]
             },
             {
                 "node": "delivery_request_28",
                 "node_id": "truck_2",
-                "arrival_time": 1277.0,
-                "departure_time": 1278.0,
-                "current_cost": 1140.0,
+                "arrival_time": 1478.0,
+                "departure_time": 1479.0,
+                "current_cost": 1340.0,
                 "current_load": 4,
-                "distance_travelled": 1140.0,
+                "distance_travelled": 1340.0,
                 "ongoing_request": [
                     "request_27",
-                    "request_10"
+                    "request_46"
                 ]
             },
             {
-                "node": "pickup_request_35",
-                "node_id": "f6_3_7",
-                "arrival_time": 1428.0,
-                "departure_time": 1429.0,
-                "current_cost": 1290.0,
-                "current_load": 6,
-                "distance_travelled": 1290.0,
-                "ongoing_request": [
-                    "request_27",
-                    "request_10",
-                    "request_35"
-                ]
-            },
-            {
-                "node": "delivery_request_35",
-                "node_id": "truck_9",
-                "arrival_time": 1619.0,
-                "departure_time": 1620.0,
-                "current_cost": 1480.0,
-                "current_load": 4,
-                "distance_travelled": 1480.0,
-                "ongoing_request": [
-                    "request_27",
-                    "request_10"
-                ]
-            },
-            {
-                "node": "delivery_request_10",
-                "node_id": "truck_9",
-                "arrival_time": 1620.0,
-                "departure_time": 1621.0,
-                "current_cost": 1480.0,
+                "node": "delivery_request_46",
+                "node_id": "truck_2",
+                "arrival_time": 1479.0,
+                "departure_time": 1480.0,
+                "current_cost": 1340.0,
                 "current_load": 2,
-                "distance_travelled": 1480.0,
+                "distance_travelled": 1340.0,
                 "ongoing_request": [
                     "request_27"
                 ]
             },
             {
-                "node": "pickup_request_40",
-                "node_id": "f9_0_3",
-                "arrival_time": 1731.0,
-                "departure_time": 1732.0,
-                "current_cost": 1590.0,
+                "node": "pickup_request_25",
+                "node_id": "f3_4_0",
+                "arrival_time": 1630.0,
+                "departure_time": 1631.0,
+                "current_cost": 1490.0,
                 "current_load": 4,
-                "distance_travelled": 1590.0,
+                "distance_travelled": 1490.0,
                 "ongoing_request": [
                     "request_27",
-                    "request_40"
+                    "request_25"
+                ]
+            },
+            {
+                "node": "pickup_request_49",
+                "node_id": "f4_3_0",
+                "arrival_time": 1671.0,
+                "departure_time": 1672.0,
+                "current_cost": 1530.0,
+                "current_load": 6,
+                "distance_travelled": 1530.0,
+                "ongoing_request": [
+                    "request_27",
+                    "request_25",
+                    "request_49"
+                ]
+            },
+            {
+                "node": "delivery_request_49",
+                "node_id": "truck_4",
+                "arrival_time": 1782.0,
+                "departure_time": 1783.0,
+                "current_cost": 1640.0,
+                "current_load": 4,
+                "distance_travelled": 1640.0,
+                "ongoing_request": [
+                    "request_27",
+                    "request_25"
                 ]
             },
             {
                 "node": "delivery_request_27",
                 "node_id": "truck_3",
-                "arrival_time": 1792.0,
-                "departure_time": 1793.0,
-                "current_cost": 1650.0,
+                "arrival_time": 1853.0,
+                "departure_time": 1854.0,
+                "current_cost": 1710.0,
                 "current_load": 2,
-                "distance_travelled": 1650.0,
+                "distance_travelled": 1710.0,
                 "ongoing_request": [
-                    "request_40"
-                ]
-            },
-            {
-                "node": "pickup_request_31",
-                "node_id": "f3_1_2",
-                "arrival_time": 1903.0,
-                "departure_time": 1904.0,
-                "current_cost": 1760.0,
-                "current_load": 4,
-                "distance_travelled": 1760.0,
-                "ongoing_request": [
-                    "request_40",
-                    "request_31"
+                    "request_25"
                 ]
             },
             {
                 "node": "pickup_request_44",
                 "node_id": "f9_4_0",
-                "arrival_time": 2064.0,
-                "departure_time": 2065.0,
-                "current_cost": 1920.0,
-                "current_load": 6,
-                "distance_travelled": 1920.0,
+                "arrival_time": 1924.0,
+                "departure_time": 1925.0,
+                "current_cost": 1780.0,
+                "current_load": 4,
+                "distance_travelled": 1780.0,
                 "ongoing_request": [
-                    "request_40",
-                    "request_31",
+                    "request_25",
                     "request_44"
                 ]
             },
             {
-                "node": "delivery_request_40",
-                "node_id": "truck_2",
-                "arrival_time": 2185.0,
-                "departure_time": 2186.0,
-                "current_cost": 2040.0,
-                "current_load": 4,
-                "distance_travelled": 2040.0,
+                "node": "pickup_request_31",
+                "node_id": "f3_1_2",
+                "arrival_time": 2085.0,
+                "departure_time": 2086.0,
+                "current_cost": 1940.0,
+                "current_load": 6,
+                "distance_travelled": 1940.0,
                 "ongoing_request": [
-                    "request_31",
-                    "request_44"
+                    "request_25",
+                    "request_44",
+                    "request_31"
                 ]
             },
             {
                 "node": "delivery_request_31",
                 "node_id": "truck_6",
-                "arrival_time": 2356.0,
-                "departure_time": 2357.0,
-                "current_cost": 2210.0,
+                "arrival_time": 2336.0,
+                "departure_time": 2337.0,
+                "current_cost": 2190.0,
+                "current_load": 4,
+                "distance_travelled": 2190.0,
+                "ongoing_request": [
+                    "request_25",
+                    "request_44"
+                ]
+            },
+            {
+                "node": "delivery_request_25",
+                "node_id": "truck_6",
+                "arrival_time": 2337.0,
+                "departure_time": 2338.0,
+                "current_cost": 2190.0,
                 "current_load": 2,
-                "distance_travelled": 2210.0,
+                "distance_travelled": 2190.0,
                 "ongoing_request": [
                     "request_44"
                 ]
@@ -1147,11 +1165,11 @@
             {
                 "node": "delivery_request_44",
                 "node_id": "truck_5",
-                "arrival_time": 2427.0,
+                "arrival_time": 2408.0,
                 "departure_time": 5626.0,
-                "current_cost": 2280.0,
+                "current_cost": 2260.0,
                 "current_load": 0,
-                "distance_travelled": 2280.0,
+                "distance_travelled": 2260.0,
                 "ongoing_request": []
             },
             {
@@ -1159,9 +1177,9 @@
                 "node_id": "depot_6",
                 "arrival_time": 5746.0,
                 "departure_time": 5746.0,
-                "current_cost": 2400.0,
+                "current_cost": 2380.0,
                 "current_load": 0,
-                "distance_travelled": 2400.0,
+                "distance_travelled": 2380.0,
                 "ongoing_request": []
             }
         ],
@@ -1214,7 +1232,7 @@
                 "node": "delivery_request_32",
                 "node_id": "truck_0",
                 "arrival_time": 379.0,
-                "departure_time": 428.0,
+                "departure_time": 468.0,
                 "current_cost": 80.0,
                 "current_load": 0,
                 "distance_travelled": 80.0,
@@ -1223,8 +1241,8 @@
             {
                 "node": "pickup_request_9",
                 "node_id": "f6_0_2",
-                "arrival_time": 478.0,
-                "departure_time": 479.0,
+                "arrival_time": 518.0,
+                "departure_time": 519.0,
                 "current_cost": 130.0,
                 "current_load": 2,
                 "distance_travelled": 130.0,
@@ -1235,8 +1253,8 @@
             {
                 "node": "delivery_request_9",
                 "node_id": "truck_5",
-                "arrival_time": 569.0,
-                "departure_time": 570.0,
+                "arrival_time": 609.0,
+                "departure_time": 610.0,
                 "current_cost": 220.0,
                 "current_load": 0,
                 "distance_travelled": 220.0,
@@ -1245,8 +1263,8 @@
             {
                 "node": "pickup_request_18",
                 "node_id": "f5_2_2",
-                "arrival_time": 670.0,
-                "departure_time": 671.0,
+                "arrival_time": 710.0,
+                "departure_time": 711.0,
                 "current_cost": 320.0,
                 "current_load": 2,
                 "distance_travelled": 320.0,
@@ -1257,8 +1275,8 @@
             {
                 "node": "pickup_request_4",
                 "node_id": "f0_4_2",
-                "arrival_time": 791.0,
-                "departure_time": 792.0,
+                "arrival_time": 831.0,
+                "departure_time": 832.0,
                 "current_cost": 440.0,
                 "current_load": 4,
                 "distance_travelled": 440.0,
@@ -1270,8 +1288,8 @@
             {
                 "node": "pickup_request_36",
                 "node_id": "f1_4_0",
-                "arrival_time": 862.0,
-                "departure_time": 863.0,
+                "arrival_time": 902.0,
+                "departure_time": 903.0,
                 "current_cost": 510.0,
                 "current_load": 6,
                 "distance_travelled": 510.0,
@@ -1284,8 +1302,8 @@
             {
                 "node": "delivery_request_36",
                 "node_id": "truck_1",
-                "arrival_time": 963.0,
-                "departure_time": 964.0,
+                "arrival_time": 1003.0,
+                "departure_time": 1004.0,
                 "current_cost": 610.0,
                 "current_load": 4,
                 "distance_travelled": 610.0,
@@ -1295,92 +1313,92 @@
                 ]
             },
             {
-                "node": "pickup_request_46",
-                "node_id": "f1_3_0",
-                "arrival_time": 1074.0,
-                "departure_time": 1075.0,
-                "current_cost": 720.0,
+                "node": "pickup_request_10",
+                "node_id": "f6_0_3",
+                "arrival_time": 1094.0,
+                "departure_time": 1095.0,
+                "current_cost": 700.0,
                 "current_load": 6,
-                "distance_travelled": 720.0,
+                "distance_travelled": 700.0,
                 "ongoing_request": [
                     "request_18",
                     "request_4",
-                    "request_46"
-                ]
-            },
-            {
-                "node": "delivery_request_46",
-                "node_id": "truck_2",
-                "arrival_time": 1235.0,
-                "departure_time": 1236.0,
-                "current_cost": 880.0,
-                "current_load": 4,
-                "distance_travelled": 880.0,
-                "ongoing_request": [
-                    "request_18",
-                    "request_4"
+                    "request_10"
                 ]
             },
             {
                 "node": "delivery_request_18",
                 "node_id": "truck_2",
-                "arrival_time": 1236.0,
-                "departure_time": 1237.0,
-                "current_cost": 880.0,
-                "current_load": 2,
-                "distance_travelled": 880.0,
+                "arrival_time": 1235.0,
+                "departure_time": 1236.0,
+                "current_cost": 840.0,
+                "current_load": 4,
+                "distance_travelled": 840.0,
                 "ongoing_request": [
-                    "request_4"
+                    "request_4",
+                    "request_10"
                 ]
             },
             {
                 "node": "pickup_request_23",
                 "node_id": "f4_3_2",
-                "arrival_time": 1407.0,
-                "departure_time": 1408.0,
-                "current_cost": 1050.0,
+                "arrival_time": 1406.0,
+                "departure_time": 1407.0,
+                "current_cost": 1010.0,
+                "current_load": 6,
+                "distance_travelled": 1010.0,
+                "ongoing_request": [
+                    "request_4",
+                    "request_10",
+                    "request_23"
+                ]
+            },
+            {
+                "node": "delivery_request_10",
+                "node_id": "truck_9",
+                "arrival_time": 1597.0,
+                "departure_time": 1598.0,
+                "current_cost": 1200.0,
                 "current_load": 4,
-                "distance_travelled": 1050.0,
+                "distance_travelled": 1200.0,
                 "ongoing_request": [
                     "request_4",
                     "request_23"
                 ]
             },
             {
-                "node": "pickup_request_25",
-                "node_id": "f3_4_0",
-                "arrival_time": 1468.0,
-                "departure_time": 1469.0,
-                "current_cost": 1110.0,
-                "current_load": 6,
-                "distance_travelled": 1110.0,
-                "ongoing_request": [
-                    "request_4",
-                    "request_23",
-                    "request_25"
-                ]
-            },
-            {
                 "node": "delivery_request_4",
                 "node_id": "truck_8",
-                "arrival_time": 1669.0,
-                "departure_time": 1670.0,
-                "current_cost": 1310.0,
-                "current_load": 4,
-                "distance_travelled": 1310.0,
+                "arrival_time": 1668.0,
+                "departure_time": 1669.0,
+                "current_cost": 1270.0,
+                "current_load": 2,
+                "distance_travelled": 1270.0,
                 "ongoing_request": [
-                    "request_23",
-                    "request_25"
+                    "request_23"
                 ]
             },
             {
-                "node": "delivery_request_25",
-                "node_id": "truck_6",
-                "arrival_time": 1790.0,
-                "departure_time": 1791.0,
-                "current_cost": 1430.0,
+                "node": "pickup_request_40",
+                "node_id": "f9_0_3",
+                "arrival_time": 1749.0,
+                "departure_time": 1750.0,
+                "current_cost": 1350.0,
+                "current_load": 4,
+                "distance_travelled": 1350.0,
+                "ongoing_request": [
+                    "request_23",
+                    "request_40"
+                ]
+            },
+            {
+                "node": "delivery_request_40",
+                "node_id": "truck_2",
+                "arrival_time": 1860.0,
+                "departure_time": 1861.0,
+                "current_cost": 1460.0,
                 "current_load": 2,
-                "distance_travelled": 1430.0,
+                "distance_travelled": 1460.0,
                 "ongoing_request": [
                     "request_23"
                 ]
@@ -1388,21 +1406,21 @@
             {
                 "node": "delivery_request_23",
                 "node_id": "truck_5",
-                "arrival_time": 1861.0,
-                "departure_time": 1926.0,
-                "current_cost": 1500.0,
+                "arrival_time": 2081.0,
+                "departure_time": 2082.0,
+                "current_cost": 1680.0,
                 "current_load": 0,
-                "distance_travelled": 1500.0,
+                "distance_travelled": 1680.0,
                 "ongoing_request": []
             },
             {
                 "node": "pickup_request_50",
                 "node_id": "f5_1_5",
-                "arrival_time": 2006.0,
-                "departure_time": 2007.0,
-                "current_cost": 1580.0,
+                "arrival_time": 2162.0,
+                "departure_time": 2163.0,
+                "current_cost": 1760.0,
                 "current_load": 2,
-                "distance_travelled": 1580.0,
+                "distance_travelled": 1760.0,
                 "ongoing_request": [
                     "request_50"
                 ]
@@ -1410,11 +1428,11 @@
             {
                 "node": "delivery_request_50",
                 "node_id": "truck_7",
-                "arrival_time": 2187.0,
+                "arrival_time": 2343.0,
                 "departure_time": 3480.0,
-                "current_cost": 1760.0,
+                "current_cost": 1940.0,
                 "current_load": 0,
-                "distance_travelled": 1760.0,
+                "distance_travelled": 1940.0,
                 "ongoing_request": []
             },
             {
@@ -1422,9 +1440,9 @@
                 "node_id": "f7_4_8",
                 "arrival_time": 3500.0,
                 "departure_time": 3501.0,
-                "current_cost": 1780.0,
+                "current_cost": 1960.0,
                 "current_load": 2,
-                "distance_travelled": 1780.0,
+                "distance_travelled": 1960.0,
                 "ongoing_request": [
                     "request_38"
                 ]
@@ -1434,9 +1452,9 @@
                 "node_id": "truck_0",
                 "arrival_time": 3701.0,
                 "departure_time": 5706.0,
-                "current_cost": 1980.0,
+                "current_cost": 2160.0,
                 "current_load": 0,
-                "distance_travelled": 1980.0,
+                "distance_travelled": 2160.0,
                 "ongoing_request": []
             },
             {
@@ -1444,9 +1462,9 @@
                 "node_id": "depot_6",
                 "arrival_time": 5746.0,
                 "departure_time": 5746.0,
-                "current_cost": 2020.0,
+                "current_cost": 2200.0,
                 "current_load": 0,
-                "distance_travelled": 2020.0,
+                "distance_travelled": 2200.0,
                 "ongoing_request": []
             }
         ],
@@ -1500,30 +1518,30 @@
         5220,
         5590,
         5620,
-        5880,
-        5900,
-        5980,
-        6100,
-        6280,
+        6060,
+        5940,
+        6060,
+        6200,
+        6400,
         6640,
-        6680,
-        6700,
-        6980,
-        7360,
+        7020,
+        7140,
+        7470,
+        7640,
         7780,
-        8400,
-        8790,
-        8990,
-        9110,
-        9330,
-        9890,
-        10710,
-        10770,
-        10850,
-        10970,
-        11190,
-        11370,
-        11630
+        8280,
+        8440,
+        8780,
+        9020,
+        9240,
+        9800,
+        10620,
+        10680,
+        10760,
+        10880,
+        11120,
+        11300,
+        11580
     ],
     "iteration_cost_2": [
         0,
@@ -1550,36 +1568,36 @@
         2720,
         2720,
         2720,
+        3050,
         3120,
-        3120,
-        3600,
-        3820,
-        3820,
-        4160,
-        4160,
-        4410,
-        4410,
-        5200,
-        5820,
-        5820,
-        6240,
-        6480,
-        6970,
-        7600,
-        7860,
-        8360,
-        8730,
-        9180,
-        9550,
-        10190,
-        10300,
-        10470,
-        10690,
-        10900,
-        11630
+        3490,
+        3900,
+        3900,
+        4170,
+        4170,
+        4290,
+        4290,
+        5280,
+        5790,
+        5790,
+        6230,
+        6420,
+        6600,
+        7310,
+        7310,
+        8370,
+        8440,
+        9210,
+        9580,
+        10220,
+        10330,
+        10500,
+        10770,
+        10980,
+        11580
     ],
     "warm_start_iteration_stats": [],
-    "route_validator_time": 0.06227755546569824,
+    "route_validator_time": 0.0836489200592041,
     "invalid": true,
     "invalid_count": 42,
     "invalid_times": [
@@ -1999,7 +2017,7 @@
         },
         {
             "time": 822,
-            "n_unstarted": 4,
+            "n_unstarted": 5,
             "cost_before": 5590.0,
             "cost_after": 5560.0,
             "accepted": true,
@@ -2015,144 +2033,144 @@
         },
         {
             "time": 990,
-            "n_unstarted": 2,
-            "cost_before": 5880.0,
-            "cost_after": 5840.0,
+            "n_unstarted": 3,
+            "cost_before": 6060.0,
+            "cost_after": 5740.0,
             "accepted": true,
-            "moved": 1
+            "moved": 3
         },
         {
             "time": 1012,
             "n_unstarted": 2,
-            "cost_before": 5900.0,
-            "cost_after": 5900.0,
+            "cost_before": 5940.0,
+            "cost_after": 5940.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 1062,
             "n_unstarted": 3,
-            "cost_before": 5980.0,
-            "cost_after": 5980.0,
+            "cost_before": 6060.0,
+            "cost_after": 6060.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 1134,
-            "n_unstarted": 3,
-            "cost_before": 6100.0,
-            "cost_after": 6100.0,
+            "n_unstarted": 4,
+            "cost_before": 6200.0,
+            "cost_after": 6200.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 1142,
-            "n_unstarted": 4,
-            "cost_before": 6280.0,
-            "cost_after": 6280.0,
+            "n_unstarted": 5,
+            "cost_before": 6400.0,
+            "cost_after": 6380.0,
+            "accepted": true,
+            "moved": 2
+        },
+        {
+            "time": 1152,
+            "n_unstarted": 5,
+            "cost_before": 6640.0,
+            "cost_after": 6910.0,
             "accepted": false,
             "moved": 0
         },
         {
-            "time": 1152,
-            "n_unstarted": 4,
-            "cost_before": 6640.0,
-            "cost_after": 6620.0,
-            "accepted": true,
-            "moved": 3
-        },
-        {
             "time": 1182,
-            "n_unstarted": 5,
-            "cost_before": 6680.0,
-            "cost_after": 6680.0,
+            "n_unstarted": 6,
+            "cost_before": 7020.0,
+            "cost_after": 7410.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 1376,
             "n_unstarted": 2,
-            "cost_before": 6700.0,
-            "cost_after": 6700.0,
+            "cost_before": 7140.0,
+            "cost_after": 7140.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 1492,
             "n_unstarted": 2,
-            "cost_before": 6980.0,
-            "cost_after": 6980.0,
-            "accepted": false,
-            "moved": 0
+            "cost_before": 7470.0,
+            "cost_after": 7380.0,
+            "accepted": true,
+            "moved": 2
         },
         {
             "time": 1514,
             "n_unstarted": 3,
-            "cost_before": 7360.0,
-            "cost_after": 7360.0,
+            "cost_before": 7640.0,
+            "cost_after": 7640.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 1684,
-            "n_unstarted": 2,
+            "n_unstarted": 1,
             "cost_before": 7780.0,
-            "cost_after": 7720.0,
-            "accepted": true,
-            "moved": 1
+            "cost_after": null,
+            "accepted": false,
+            "moved": 0
         },
         {
             "time": 1714,
-            "n_unstarted": 3,
-            "cost_before": 8400.0,
-            "cost_after": 8270.0,
-            "accepted": true,
-            "moved": 2
+            "n_unstarted": 2,
+            "cost_before": 8280.0,
+            "cost_after": 8280.0,
+            "accepted": false,
+            "moved": 0
         },
         {
             "time": 1798,
-            "n_unstarted": 2,
-            "cost_before": 8790.0,
-            "cost_after": 8650.0,
-            "accepted": true,
-            "moved": 2
+            "n_unstarted": 3,
+            "cost_before": 8440.0,
+            "cost_after": 8440.0,
+            "accepted": false,
+            "moved": 0
         },
         {
             "time": 1926,
             "n_unstarted": 1,
-            "cost_before": 8990.0,
+            "cost_before": 8780.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 2026,
-            "n_unstarted": 1,
-            "cost_before": 9110.0,
-            "cost_after": null,
+            "n_unstarted": 2,
+            "cost_before": 9020.0,
+            "cost_after": 9020.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 2230,
             "n_unstarted": 1,
-            "cost_before": 9330.0,
+            "cost_before": 9240.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 2416,
-            "n_unstarted": 1,
-            "cost_before": 9890.0,
-            "cost_after": null,
+            "n_unstarted": 2,
+            "cost_before": 9800.0,
+            "cost_after": 9800.0,
             "accepted": false,
             "moved": 0
         },
         {
             "time": 3158,
             "n_unstarted": 1,
-            "cost_before": 10710.0,
+            "cost_before": 10620.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
@@ -2160,7 +2178,7 @@
         {
             "time": 3480,
             "n_unstarted": 1,
-            "cost_before": 10770.0,
+            "cost_before": 10680.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
@@ -2168,7 +2186,7 @@
         {
             "time": 3692,
             "n_unstarted": 1,
-            "cost_before": 10850.0,
+            "cost_before": 10760.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
@@ -2176,7 +2194,7 @@
         {
             "time": 3864,
             "n_unstarted": 1,
-            "cost_before": 10970.0,
+            "cost_before": 10880.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
@@ -2184,7 +2202,7 @@
         {
             "time": 4036,
             "n_unstarted": 1,
-            "cost_before": 11190.0,
+            "cost_before": 11120.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
@@ -2192,7 +2210,7 @@
         {
             "time": 4248,
             "n_unstarted": 1,
-            "cost_before": 11370.0,
+            "cost_before": 11300.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
@@ -2200,17 +2218,17 @@
         {
             "time": 4500,
             "n_unstarted": 1,
-            "cost_before": 11630.0,
+            "cost_before": 11580.0,
             "cost_after": null,
             "accepted": false,
             "moved": 0
         }
     ],
-    "computational_time": 8.470458745956421,
+    "computational_time": 9.643369197845459,
     "settings": {
         "model_version": "v2",
         "tw_mode": "soft",
         "reassign": true,
-        "penalty": 50
+        "penalty": 50.0
     }
 }
