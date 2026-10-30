@@ -325,7 +325,7 @@ def figures(w, fig_dir):
     data = pd.DataFrame(rows).sort_values('order')
     for y, name, log in (('Time (s)', 'time_per_request.png', True), ('Cost', 'cost_per_algorithm.png', False)):
         fig, ax = plt.subplots(figsize=(8, 4))
-        sns.barplot(data=data, x='Robots - TW', y=y, hue='Algorithm', hue_order=list(ALGS), ax=ax, errorbar=('ci', 95))
+        sns.barplot(data=data, x='Robots - TW', y=y, hue='Algorithm', hue_order=list(ALGS), ax=ax, errorbar=('ci', 95), seed=0)
         if log:
             ax.set_yscale('log')
         ax.set_title(('Average time per request' if log else 'Average cost') + ' by algorithm (SparseGrid and DenseGrid)')
@@ -477,7 +477,7 @@ def call_figures(calls, fig_dir):
                            ('Gap', 'gap_per_active_tasks.png', 'Mean optimality gap per call')):
         fig, ax = plt.subplots(figsize=(10, 5))
         sns.barplot(data=data.dropna(subset=[y]), x='Active tasks', y=y, hue='Method', hue_order=['WS-MILP', 'MILP'],
-                    errorbar=('ci', 95), ax=ax)
+                    errorbar=('ci', 95), seed=0, ax=ax)
         ax.set_title(f'{title} by number of active tasks (SparseGrid and DenseGrid)')
         ax.grid(axis='y', linewidth=0.5)
         fig.tight_layout()
