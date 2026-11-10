@@ -1,0 +1,39 @@
+{\color{revgreen}
+\begin{table}[htb]
+\caption{WS-MILP warm-started with MCFI (WS-MILP) and with the cheaper of the MCFI and MCFI+R plans (WSR) at each replanning event, on the 240 benchmark instances (soft time windows). All the instances are solved by both methods. Cost is the mean cumulative cost and Time the mean computation time per replanning event (s); $\Delta$ is the mean relative cost difference of WSR with respect to WS-MILP (\%). Wins counts the instances in which each method obtains the lower cost. Warm start classifies the replanning events of WSR by comparing, on the same state, the MCFI plan with the plan obtained by reinserting the unstarted tasks (MCFI+R): MCFI+R cheaper (the MCFI+R plan is the warm start), MCFI cheaper or Equal cost (the MCFI plan is kept), or no unstarted task to reinsert (None, the MCFI plan is kept).}
+\label{tab:wsr_summary}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllc|r|rr|rrr|rrr|rrrr}
+\toprule
+ & & & & MCFI+R & \multicolumn{2}{c|}{WS-MILP} & \multicolumn{3}{c|}{WSR} & \multicolumn{3}{c|}{Wins} & \multicolumn{4}{c}{Warm start (events)} \\
+Graph & TW & Robots & $\#$ & Cost & Cost & Time & Cost & Time & $\Delta$ & WS-MILP & WSR & Tie & MCFI+R & MCFI & Equal & None \\
+\midrule
+Random & narrow & 3 & 10 & 5352.1 & 5352.1 & 0.31 & 5352.1 & 0.41 & 0.00 & 0 & 0 & 10 & 1 & 0 & 2 & 497 \\
+ &  & 6 & 10 & 5298.1 & 5298.1 & 0.53 & 5298.1 & 0.54 & 0.00 & 0 & 0 & 10 & 1 & 0 & 2 & 497 \\
+ &  & 9 & 10 & 5230.4 & 5230.4 & 0.71 & 5230.4 & 0.76 & 0.00 & 0 & 0 & 10 & 0 & 0 & 2 & 498 \\ \cline{2-17}
+ & wide & 3 & 10 & 5369.3 & 5368.7 & 0.36 & 5368.7 & 0.39 & 0.00 & 0 & 0 & 10 & 1 & 0 & 8 & 491 \\
+ &  & 6 & 10 & 5312.6 & 5312.0 & 0.58 & 5312.0 & 0.51 & 0.00 & 0 & 0 & 10 & 1 & 0 & 6 & 493 \\
+ &  & 9 & 10 & 5236.6 & 5236.6 & 0.73 & 5236.6 & 0.76 & 0.00 & 0 & 0 & 10 & 0 & 0 & 4 & 496 \\ \cline{1-17}
+Polar & narrow & 3 & 10 & 4474.0 & 4474.0 & 0.28 & 4474.0 & 0.29 & 0.00 & 0 & 0 & 10 & 0 & 0 & 1 & 499 \\
+ &  & 6 & 10 & 4451.4 & 4451.4 & 0.44 & 4451.4 & 0.59 & 0.00 & 0 & 0 & 10 & 0 & 0 & 1 & 499 \\
+ &  & 9 & 10 & 4413.7 & 4413.7 & 0.61 & 4413.7 & 0.55 & 0.00 & 0 & 0 & 10 & 0 & 0 & 0 & 500 \\ \cline{2-17}
+ & wide & 3 & 10 & 4496.8 & 4496.8 & 0.37 & 4496.8 & 0.30 & 0.00 & 0 & 0 & 10 & 0 & 0 & 3 & 497 \\
+ &  & 6 & 10 & 4465.7 & 4465.7 & 0.65 & 4465.7 & 0.52 & 0.00 & 0 & 0 & 10 & 0 & 0 & 2 & 498 \\
+ &  & 9 & 10 & 4418.9 & 4418.9 & 0.67 & 4418.9 & 0.68 & 0.00 & 0 & 0 & 10 & 0 & 0 & 2 & 498 \\ \cline{1-17}
+SparseGrid & narrow & 3 & 10 & 12690.0 & 12268.0 & 0.43 & 12153.0 & 0.41 & -0.84 & 4 & 4 & 2 & 30 & 7 & 206 & 257 \\
+ &  & 6 & 10 & 12003.0 & 11585.0 & 2.44 & 11501.0 & 4.01 & -0.70 & 4 & 5 & 1 & 78 & 25 & 278 & 119 \\
+ &  & 9 & 10 & 11605.0 & 10992.0 & 16.70 & 10952.0 & 19.69 & -0.40 & 5 & 5 & 0 & 67 & 61 & 296 & 75 \\ \cline{2-17}
+ & wide & 3 & 10 & 11334.0 & 10211.0 & 19.76 & 10357.0 & 23.66 & 1.45 & 5 & 3 & 2 & 62 & 153 & 200 & 85 \\
+ &  & 6 & 10 & 10464.0 & 9272.0 & 158.12 & 9143.0 & 159.70 & -1.38 & 5 & 5 & 0 & 78 & 256 & 128 & 38 \\
+ &  & 9 & 10 & 10210.0 & 9362.0 & 221.19 & 9377.0 & 222.78 & 0.24 & 7 & 3 & 0 & 93 & 269 & 83 & 55 \\ \cline{1-17}
+DenseGrid & narrow & 3 & 10 & 13001.0 & 12631.0 & 0.42 & 12511.0 & 0.51 & -0.82 & 3 & 3 & 4 & 29 & 12 & 194 & 265 \\
+ &  & 6 & 10 & 11520.0 & 11049.0 & 6.06 & 10912.0 & 6.60 & -1.21 & 2 & 8 & 0 & 82 & 46 & 253 & 119 \\
+ &  & 9 & 10 & 11249.0 & 10722.0 & 29.93 & 10593.0 & 38.41 & -1.38 & 2 & 7 & 1 & 83 & 74 & 257 & 86 \\ \cline{2-17}
+ & wide & 3 & 10 & 10950.0 & 10320.0 & 44.35 & 10399.0 & 33.47 & 0.86 & 5 & 2 & 3 & 71 & 169 & 182 & 78 \\
+ &  & 6 & 10 & 9747.0 & 9274.0 & 175.14 & 8997.0 & 175.09 & -2.81 & 2 & 8 & 0 & 104 & 278 & 89 & 29 \\
+ &  & 9 & 10 & 9734.0 & 9681.0 & 228.99 & 9172.0 & 231.30 & -5.33 & 1 & 8 & 1 & 90 & 289 & 65 & 55 \\ \cline{1-17}
+\bottomrule
+\end{tabular}
+}
+\end{table}
+}

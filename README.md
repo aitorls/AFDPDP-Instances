@@ -62,6 +62,8 @@ statistics per call.
 | `WS-v2-soft` | WS-MILP (MILP warm-started with the MCFI plan) |
 | suffix `-T10`, `-T60` | MILP and WS-MILP with a time limit of 10 or 60 s per call (default 300 s) |
 | suffix `-dp10`, `-dp200` | delay penalty of 10 or 200 per time unit (default 50), on `delay/tw_0.5` |
+| suffix `-sb` | MILP and WS-MILP with symmetry-breaking constraints (grids, wide windows, 6 and 9 robots) |
+| `WSR-v2-soft` | WSR: WS-MILP warm-started with the cheaper of the MCFI and MCFI+R plans (Appendix B) |
 
 All of these use soft time windows: a late visit is allowed and its delay is penalised in the cost. Files with other
 prefixes (`BH_`, `UPVD_`, `URJC_`, `WSD_`, `WST_`, ...) and the notebooks and `results.csv` at the repo root belong to
@@ -79,7 +81,8 @@ Requires Python 3 with pandas, numpy, matplotlib and seaborn. The script:
    recomputes its cost: `results/summary.csv`;
 2. collects the per-call statistics of MILP and WS-MILP: `results/calls.csv`;
 3. writes the LaTeX tables to `results/tables/revision/` and the figures to `results/figures/revision/`, and prints the
-   figures quoted in the text.
+   figures quoted in the text;
+4. writes the tables and figures of Appendix B (WSR) to the same folders.
 
 See `scripts/README.md` for details.
 

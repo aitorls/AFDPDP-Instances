@@ -64,7 +64,7 @@ def call_stats(solution):
         times = solution['iterations_time']
         stats.update(n_calls=len(times), mean_solver_time=sum(times) / len(times), max_solver_time=max(times))
     reassign = solution.get('reassign_stats') or []
-    if reassign:
+    if reassign and not ws:  # [WSR] in WS-MILP the plan changes are the MILP's (see count_mcfi_vs_mcfir.py)
         stats.update(n_plan_changes=sum(s['accepted'] for s in reassign),
                      n_reassigned_tasks=sum(s['moved'] for s in reassign))
     return stats

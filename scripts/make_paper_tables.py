@@ -12,6 +12,9 @@ Usage (cwd = repo root):
            [--calls results/revision/campaign/calls.csv]
 Writes <paper>/tables/revision/*.tex, <paper>/figures/revision/*.png and prints the figures quoted in the text.
 Without --calls, Table 6 and Figs. 5 and 6 are not generated.
+  3. [WSR] Appendix tables and figures of WS-MILP warm-started with the cheaper of MCFI and MCFI+R (in green):
+       python tools/make_paper_tables.py wsr results/revision/campaign/summary.csv \
+           results/revision/campaign/wsr_counts.csv paper/ECAI_2025
 """
 import argparse
 import glob
@@ -218,8 +221,8 @@ def delay_table(df, out):
     body = (r"\begin{table}[htb]" + "\n\\centering\n"
             r"\caption{Delay-prone instances: pickup windows of width $\alpha D$ (narrow instances of the grid graphs). "
             r"Mean cumulative cost of each algorithm and, for the heuristics and WS-MILP, mean relative difference "
-            r"with respect to MILP, $\Delta$ (\%). \%Opt: percentage of MILP calls solved to optimality (gap below "
-            r"1\%). Delay share: percentage of the MILP cost due to delay penalties.}" +
+            r"with respect to MILP, $\Delta$ (\%). \%Opt: percentage of MILP calls that are "
+            r"1\%-gap-optimal. Delay share: percentage of the MILP cost due to delay penalties.}" +
             "\n\\label{tab:delay_experiment}\n\\resizebox{\\textwidth}{!}{\n"
             r"\begin{tabular}{lllc|rr|rr|r|rr|rr}" + "\n\\toprule\n" +
             r" & & & & \multicolumn{2}{c|}{MCFI} & \multicolumn{2}{c|}{MCFI+R} & MILP & \multicolumn{2}{c|}{WS-MILP} & "
@@ -387,6 +390,19 @@ def numbers(w, df):
     cells = w['time_per_request'].groupby(level=CELL).mean()
     print('max cell speed-up MILP/MCFI %.0f, WS/MCFI %.0f' % ((cells['MILP'] / cells['MCFI']).max(),
                                                                (cells['WS-MILP'] / cells['MCFI']).max()))
+    # N7: symmetry breaking (Section 5.2), grids with wide windows and 6 or 9 robots
+    n7 = frame(df, 'original', {'MILP': 'MILP-v2-soft', 'MILP-sb': 'MILP-v2-soft-sb', 'WS-MILP': 'WS-v2-soft',
+                                'WS-MILP-sb': 'WS-v2-soft-sb'})
+    n7 = n7[n7.index.get_level_values('graph').isin(GRIDS) & (n7.index.get_level_values('tw') == 'wide')
+            & n7.index.get_level_values('robots').isin([6, 9])]
+    for a in ('MILP', 'WS-MILP'):
+        if a + '-sb' not in n7['solved'].columns:
+            print(f'N7 {a}: no -sb solutions')
+            continue
+        both = solved(n7, a) & solved(n7, a + '-sb')
+        d = (100 * (n7['cost'][a + '-sb'] - n7['cost'][a]) / n7['cost'][a])[both]
+        print(f'N7 {a}: completed {int(solved(n7, a).sum())} without and {int(solved(n7, a + "-sb").sum())} with '
+              f'symmetry breaking, of {len(n7)}; d(with|without) mean {d.mean():.1f} n {len(d)}')
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -490,6 +506,146 @@ def call_figures(calls, fig_dir):
               f'min active tasks of a call at the time limit: {hit.min() if len(hit) else None}')
 
 
+# ---------------------------------------------------------------------------------------------------------------------
+# [WSR] Appendix: WS-MILP warm-started with the cheaper of the MCFI and MCFI+R plans (second revision round, in green)
+
+WSR_ALGS = dict(ALGS, WSR='WSR-v2-soft')
+
+
+def green_table(body):
+    return '{\\color{revgreen}\n' + body + '}\n'
+
+
+def wsr_frame(df, counts_csv):
+    """instance x columns of the original set with WSR, plus the warm-start origin per event (wsr_counts.csv)"""
+    w = frame(df, 'original', WSR_ALGS)
+    counts = pd.read_csv(counts_csv)
+    keys = [instance_key(n) for n in counts['instance']]
+    counts.index = pd.MultiIndex.from_tuples([(g, tw, r, s) for g, (r, tw, s) in zip(counts['graph'], keys)], names=KEY)
+    return w, counts.drop(columns=['graph', 'instance']).reindex(w.index)
+
+
+def wsr_tables(w, counts, out):
+    c, t = w['cost'], w['time_per_request']
+    lines, prev_graph, prev_tw = [], None, None
+    for graph in GRAPHS:
+        for tw in ('narrow', 'wide'):
+            for robots in (3, 6, 9):
+                idx = w.xs((graph, tw, robots), level=CELL, drop_level=False).index
+                d = c['WSR'].loc[idx] - c['WS-MILP'].loc[idx]
+                n = counts.loc[idx].sum()
+                cells = [graph if graph != prev_graph else '', tw if (graph, tw) != prev_tw else '', str(robots),
+                         str(len(idx)), fmt(c['MCFI+R'].loc[idx].mean()), fmt(c['WS-MILP'].loc[idx].mean()),
+                         fmt(t['WS-MILP'].loc[idx].mean(), 2), fmt(c['WSR'].loc[idx].mean()),
+                         fmt(t['WSR'].loc[idx].mean(), 2), fmt((100 * d / c['WS-MILP'].loc[idx]).mean(), 2),
+                         str(int((d > 1e-6).sum())), str(int((d < -1e-6).sum())), str(int((d.abs() <= 1e-6).sum())),
+                         str(int(n['mcfir_better'])), str(int(n['mcfi_better'])), str(int(n['tie'])),
+                         str(int(n['nothing_to_reassign']))]
+                prev_graph, prev_tw = graph, (graph, tw)
+                lines.append(' & '.join(cells) + r' \\')
+            lines[-1] += r' \cline{2-17}' if tw == 'narrow' else r' \cline{1-17}'
+    body = (r"\begin{table}[htb]" + "\n"
+            r"\caption{WS-MILP warm-started with MCFI (WS-MILP) and with the cheaper of the MCFI and MCFI+R plans "
+            r"(WSR) at each replanning event, on the 240 benchmark instances (soft time windows). All the instances are "
+            r"solved by both methods. Cost is the mean cumulative cost and Time the mean computation time per "
+            r"replanning event (s); $\Delta$ is the mean relative cost difference of WSR with respect to WS-MILP (\%). "
+            r"Wins counts the instances in which each method obtains the lower cost. Warm start classifies the "
+            r"replanning events of WSR by comparing, on the same state, the MCFI plan with the plan obtained by "
+            r"reinserting the unstarted tasks (MCFI+R): MCFI+R cheaper (the MCFI+R plan is the warm start), MCFI cheaper "
+            r"or Equal cost (the MCFI plan is kept), or no unstarted task to reinsert (None, the MCFI plan is kept).}" + "\n\\label{tab:wsr_summary}\n\\resizebox{\\textwidth}{!}{\n"
+            r"\begin{tabular}{lllc|r|rr|rrr|rrr|rrrr}" + "\n\\toprule\n"
+            r" & & & & MCFI+R & \multicolumn{2}{c|}{WS-MILP} & \multicolumn{3}{c|}{WSR} & \multicolumn{3}{c|}{Wins} & "
+            r"\multicolumn{4}{c}{Warm start (events)} \\" + "\n"
+            r"Graph & TW & Robots & $\#$ & Cost & Cost & Time & Cost & Time & $\Delta$ & WS-MILP & WSR & Tie & "
+            r"MCFI+R & MCFI & Equal & None \\" + "\n\\midrule\n" + '\n'.join(lines) +
+            "\n\\bottomrule\n\\end{tabular}\n}\n\\end{table}\n")
+    write(out, 'table_wsr.tex', green_table(body))
+
+    head = (r" & & & & \multicolumn{2}{c|}{WS-MILP} & \multicolumn{3}{c|}{WSR} & \multicolumn{4}{c}{Warm start (events)} \\"
+            "\n" r"Graph & TW & Robots & Instance & Cost & Time & Cost & Time & $\Delta$ & MCFI+R & MCFI & Equal & None \\")
+    rows = []
+    for graph in GRIDS:
+        for tw in ('narrow', 'wide'):
+            for robots in (3, 6, 9):
+                for seed in range(10):
+                    key = (graph, tw, robots, seed)
+                    ws, wsr = c['WS-MILP'][key], c['WSR'][key]
+                    bold = lambda v, o: r'\textbf{' + fmt(v) + '}' if v < o - 1e-6 else fmt(v)
+                    n = counts.loc[key]
+                    rows.append(' & '.join(
+                        [graph if (tw, robots, seed) == ('narrow', 3, 0) else '', tw if (robots, seed) == (3, 0) else '',
+                         str(robots) if seed == 0 else '', str(seed), bold(ws, wsr), fmt(t['WS-MILP'][key], 2),
+                         bold(wsr, ws), fmt(t['WSR'][key], 2), fmt(100 * (wsr - ws) / ws, 2)] +
+                        [str(int(n[k])) for k in ('mcfir_better', 'mcfi_better', 'tie', 'nothing_to_reassign')]) +
+                        r' \\')
+                rows[-1] += r' \hline' if (tw, robots) != ('wide', 9) else ''
+    body = ("\\begin{longtable}{llcc|rr|rrr|rrrr}\n"
+            r"\caption{WS-MILP and WSR per instance in the grid graphs (soft time windows), with the columns of "
+            r"Table~\ref{tab:wsr_summary}. The lower cost of each instance is highlighted in bold. In the Polar and "
+            r"Random graphs, both methods obtain the same cost in all the instances.}" +
+            f"\n\\label{{tab:wsr_instances}} \\\\\n\\toprule\n{head}\n\\midrule\n\\endfirsthead\n"
+            f"\\caption*{{Table \\ref{{tab:wsr_instances}} (continued)}} \\\\\n\\toprule\n{head}\n\\midrule\n\\endhead\n"
+            "\\midrule\n\\multicolumn{13}{r}{Continues on next page...} \\\\\n\\endfoot\n\\bottomrule\n\\endlastfoot\n" +
+            '\n'.join(rows) + "\n\\end{longtable}\n")
+    write(out, 'table_wsr_instances.tex', green_table(body))
+
+
+def wsr_figures(w, fig_dir):
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+
+    grid = w[w.index.get_level_values('graph').isin(GRIDS)]
+    rows = []
+    for a in WSR_ALGS:
+        for key in grid.index[solved(grid, a).values]:
+            rows.append({'Algorithm': a, 'Robots - TW': f'{key[2]}-{key[1]}', 'order': (key[2], key[1]),
+                         'Cost': grid['cost'][a][key], 'Time (s)': grid['time_per_request'][a][key]})
+    data = pd.DataFrame(rows).sort_values('order')
+    for y, name, log in (('Time (s)', 'wsr_time_per_request.png', True), ('Cost', 'wsr_cost_per_algorithm.png', False)):
+        fig, ax = plt.subplots(figsize=(8, 4))
+        sns.barplot(data=data, x='Robots - TW', y=y, hue='Algorithm', hue_order=list(WSR_ALGS), ax=ax,
+                    errorbar=('ci', 95), seed=0)
+        ax.legend(title='Algorithm', bbox_to_anchor=(1.01, 1), loc='upper left')
+        if log:
+            ax.set_yscale('log')
+        ax.set_title(('Average time per request' if log else 'Average cost') + ' by algorithm (SparseGrid and DenseGrid)')
+        plt.setp(ax.get_xticklabels(), rotation=45, ha='right')
+        fig.tight_layout()
+        fig.savefig(os.path.join(fig_dir, name), dpi=200)
+        plt.close(fig)
+    delta = 100 * (w['cost']['WSR'] - w['cost']['WS-MILP']) / w['cost']['WS-MILP']
+    fig, ax = plt.subplots(figsize=(10, 5))
+    for graph, marker in zip(GRAPHS, ('o', 'X', 's', 'P')):
+        values = np.sort(delta[delta.index.get_level_values('graph') == graph].values)
+        ax.plot(range(len(values)), values, linestyle='none', marker=marker, markersize=6, label=graph)
+    ax.axhline(0, color='black', linewidth=0.8, linestyle='--')
+    ax.set_title('WSR vs WS-MILP cost difference by graph type')
+    ax.set_xlabel('Instances (sorted by difference within each graph)')
+    ax.set_ylabel('100 (C_WSR - C_WS-MILP) / C_WS-MILP (%)')
+    ax.legend(title='Graph type', loc='lower right')
+    ax.grid(linewidth=0.5)
+    fig.tight_layout()
+    fig.savefig(os.path.join(fig_dir, 'cost_diff_WSR_WSMILP.png'), dpi=200)
+    plt.close(fig)
+
+
+def wsr_numbers(w, counts):
+    """Figures quoted in the WSR paragraph and appendix"""
+    grid = [i for i in w.index if i[0] in GRIDS]
+    for a, b in (('WSR', 'WS-MILP'), ('WSR', 'MCFI'), ('WSR', 'MCFI+R'), ('WSR', 'MILP'), ('WS-MILP', 'MILP')):
+        print(f'd({a}|{b}) grid %.2f%% (n=%d)' % rel(w, a, b, grid), ' all %.2f%% (n=%d)' % rel(w, a, b, list(w.index)))
+    d = (w['cost']['WSR'] - w['cost']['WS-MILP']).loc[grid]
+    r = 100 * d / w['cost']['WS-MILP'].loc[grid]
+    print(f'grid: WSR wins {(d < -1e-6).sum()}, WS-MILP wins {(d > 1e-6).sum()}, ties {(d.abs() <= 1e-6).sum()}, '
+          f'd min {r.min():.2f}% max {r.max():.2f}%')
+    print('time per request grid', w['time_per_request'].loc[grid][['WS-MILP', 'WSR']].mean().round(2).to_dict())
+    print('optimal calls % grid', w['optimal_calls_pct'].loc[grid][['WS-MILP', 'WSR']].mean().round(1).to_dict())
+    print('warm start events', counts.sum().astype(int).to_dict(),
+          'instances with an MCFI+R warm start', int((counts['mcfir_better'] > 0).sum()))
+
+
 def write(out, name, text):
     with open(os.path.join(out, name), 'w', encoding='utf-8') as f:
         f.write(text)
@@ -505,9 +661,19 @@ def main():
     tables.add_argument('summary_csv')
     tables.add_argument('paper_dir')
     tables.add_argument('--calls')
+    wsr = sub.add_parser('wsr')
+    wsr.add_argument('summary_csv')
+    wsr.add_argument('wsr_counts_csv')
+    wsr.add_argument('paper_dir')
     args = parser.parse_args()
     if args.command == 'extract-calls':
         extract_calls(args.instances_root, args.calls_csv)
+        return
+    if args.command == 'wsr':
+        w, counts = wsr_frame(load(args.summary_csv), args.wsr_counts_csv)
+        wsr_tables(w, counts, os.path.join(args.paper_dir, 'tables', 'revision'))
+        wsr_figures(w, os.path.join(args.paper_dir, 'figures', 'revision'))
+        wsr_numbers(w, counts)
         return
 
     df = load(args.summary_csv)
