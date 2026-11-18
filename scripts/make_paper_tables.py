@@ -32,6 +32,14 @@ GRAPHS = ['Random', 'Polar', 'SparseGrid', 'DenseGrid']
 GRIDS = ['SparseGrid', 'DenseGrid']
 KEY = ['graph', 'tw', 'robots', 'seed']
 CELL = ['graph', 'tw', 'robots']
+FIG_DPI = 650  # journal: figures >= 650 dpi
+
+
+def save_figure(fig, fig_dir, name):
+    """PNG (>= 650 dpi), vector PDF used by the manuscript and vector EPS for the journal upload"""
+    fig.savefig(os.path.join(fig_dir, name), dpi=FIG_DPI)
+    for ext in ('.pdf', '.eps'):
+        fig.savefig(os.path.join(fig_dir, os.path.splitext(name)[0] + ext))
 
 
 def frame(df, data_set, algs=ALGS):
@@ -334,7 +342,7 @@ def figures(w, fig_dir):
         ax.set_title(('Average time per request' if log else 'Average cost') + ' by algorithm (SparseGrid and DenseGrid)')
         plt.setp(ax.get_xticklabels(), rotation=45, ha='right')
         fig.tight_layout()
-        fig.savefig(os.path.join(fig_dir, name), dpi=200)
+        save_figure(fig, fig_dir, name)
         plt.close(fig)
     # Fig. 7: d(WS-MILP|MCFI) per instance, sorted within each graph, one panel (layout of the original figure)
     both = solved(w, 'WS-MILP') & solved(w, 'MCFI')
@@ -350,7 +358,7 @@ def figures(w, fig_dir):
     ax.legend(title='Graph type', loc='lower right')
     ax.grid(linewidth=0.5)
     fig.tight_layout()
-    fig.savefig(os.path.join(fig_dir, 'cost_diff_WSMILP_MCFI.png'), dpi=200)
+    save_figure(fig, fig_dir, 'cost_diff_WSMILP_MCFI.png')
     plt.close(fig)
 
 
@@ -497,7 +505,7 @@ def call_figures(calls, fig_dir):
         ax.set_title(f'{title} by number of active tasks (SparseGrid and DenseGrid)')
         ax.grid(axis='y', linewidth=0.5)
         fig.tight_layout()
-        fig.savefig(os.path.join(fig_dir, name), dpi=200)
+        save_figure(fig, fig_dir, name)
         plt.close(fig)
     for a in ('WS-MILP', 'MILP'):
         d = data[data['Method'] == a]
@@ -613,7 +621,7 @@ def wsr_figures(w, fig_dir):
         ax.set_title(('Average time per request' if log else 'Average cost') + ' by algorithm (SparseGrid and DenseGrid)')
         plt.setp(ax.get_xticklabels(), rotation=45, ha='right')
         fig.tight_layout()
-        fig.savefig(os.path.join(fig_dir, name), dpi=200)
+        save_figure(fig, fig_dir, name)
         plt.close(fig)
     delta = 100 * (w['cost']['WSR'] - w['cost']['WS-MILP']) / w['cost']['WS-MILP']
     fig, ax = plt.subplots(figsize=(10, 5))
@@ -627,7 +635,7 @@ def wsr_figures(w, fig_dir):
     ax.legend(title='Graph type', loc='lower right')
     ax.grid(linewidth=0.5)
     fig.tight_layout()
-    fig.savefig(os.path.join(fig_dir, 'cost_diff_WSR_WSMILP.png'), dpi=200)
+    save_figure(fig, fig_dir, 'cost_diff_WSR_WSMILP.png')
     plt.close(fig)
 
 
